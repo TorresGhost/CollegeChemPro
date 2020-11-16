@@ -1,0 +1,1206 @@
+\documentclass[main.tex]{subfiles}
+\newcommand\chapterlabel{energy}
+
+\begin{document}
+\linenumbers
+
+
+
+\chapter[Thermochemistry]{Thermochemistry}
+\label{ch:energy}
+
+
+   
+   \begin{marginfigure}
+      \begin{tikzpicture} \node (a) at (0,0) {\includegraphics[width=4cm]{chapter2/figure1}} node[rotate=90, font=\tiny] at ([yshift=.5cm,xshift=.1cm]a.south east) {\textsuperscript{\textcopyright} PngImg} ;
+\end{tikzpicture}
+\end{marginfigure}
+
+
+
+
+\lettrine[lines=4]{\color{black!45}E}{nergy}  involves many aspects of our everyday life. Chemical reactions happening in our body consume or release energy as we walk, study, and even breath. We also use energy at home to warm food or turn on the lights, to drive our cars and go to work. The energy needed for our body to function comes from food. If we do not eat for a while, we run low of energy. Similarly, the burning of fossil fuels such as oil, propane, or gasoline provides enough energy to maintain our homes. Some reactions produce energy whereas others release energy. On the other hand, how do we measure the energy released or consumed in a reaction? Thermochemistry is the study of heat in chemical reactions. This chapter will answer this and other questions as it covers different aspects of thermochemistry that involves the interaction between chemistry and energy. You will learn about temperature, heat and how to quantitatively compute the energy exchanged during a chemical reaction.
+
+%\textquotesingle 
+\begin{marginfigure}%LEARNING GOALS BOX
+\begin{mytcbox}{GOALS}
+\begin{enumerate}[label=\protect\circled{\color{white}\arabic*}]
+\item Convert heat to temperature rise
+\item Carry calorimetric calculations
+\item Use the enthalpy table
+\item Compute enthalpy changes
+\item Apply Hess's Law to compute enthalpy
+\end{enumerate}
+\end{mytcbox}
+\vspace{1cm}
+\begin{tcolorbox}[enhanced,colback=red!5!white,colframe=black!50!red,boxrule=1pt,
+  arc=0pt,outer arc=0pt,drop heavy lifted shadow]
+\faGears\ 
+\docenvdef{Discussion:} What do you think about renewable energy? List three benefits and three inconvenients of renewable sources of energy. \end{tcolorbox}
+
+\end{marginfigure}%LEARNING GOALS BOX
+
+
+
+
+
+\section{Energy \& temperature}
+When you are running, walking, dancing, or thinking, you are using energy to do work. In fact, energy is defined as the ability to do work. Suppose you are climbing a steep hill. Perhaps you become too tired to go on; you do not have sufficient energy to do any more work. Now suppose you sit down and have lunch. In a while you will have obtained energy from the food, and you will be able to do more work and complete the climb. Similarly, chemical energy is the energy stored in the structure of chemicals and it depends on the arrangement of molecules and the nature of these molecules.
+\sloppy
+\begin{description}
+
+\item[\docfilehook{Potential \& Kinetic Energy: heat}{}] 
+Energy can be classified as potential energy or kinetic energy. 
+Kinetic energy is the energy of motion and any fast-moving object has kinetic energy. Think about a bullet coming out of a gun; as the bullet moves very fast it contains kinetic energy that can be releases when it collide with a target. Potential energy is energy stored in objects located at a certain height. A boulder resting on top of a mountain has potential energy because of its location. If the boulder rolls down the mountain, the potential energy becomes kinetic energy. Water stored in a reservoir has potential energy. When the water goes over the dam, the potential energy is converted to kinetic energy. The potential energy resulting from the interaction of charged particles is called electrostatic energy. Heat refers to thermal energy, which is associated with the random motion of particles in a substance and therefore is related to kinetic energy. A frozen pizza feels cold because the particles in the pizza are moving slowly. As the pizza receives heat, the motion of the particles increase. Eventually the particles have enough energy to make the pizza hot and ready to be eaten. When a substance receives heat it gets warmer and it raises its temperature, whereas if it looses heat it gets cooler and its temperature decreases. 
+\item[\docfilehook{Mechanical energy: work}{}] 
+The sum of potential and kinetic energy is called mechanical energy. Mechanical energy refers to the ability to do work. Examples of work are a car engine moving or a ballon expanding its volume.
+
+
+   \begin{marginfigure}[2cm]
+   \begin{tikzpicture} \node (a) at (0,0) {\includegraphics[width=4cm, height=4cm]{chapter2/figure1-9}} node[rotate=90, font=\tiny] at ([yshift=.5cm,xshift=.1cm]a.south east) {\textsuperscript{\textcopyright} www.wallpaperflare.com} ;
+\node[text width=5cm] at ([yshift=0.2cm]a.north) {\mytriangle{red}Flowers convert sunlight into chemical energy};
+\end{tikzpicture}
+\begin{tikzpicture} \node (a) at (0,0) {\includegraphics[width=4.0cm, height=4.5cm]{chapter2/figure1-2}} node[rotate=90, font=\tiny] at ([yshift=.5cm,xshift=.1cm]a.south east) {\textsuperscript{\textcopyright} www.wallpaperflare.com} ;
+\node[text width=5cm] at ([yshift=0.2cm]a.north) {\mytriangle{red}a bullet has kinetic energy};
+\end{tikzpicture}
+\begin{tikzpicture} \node (a) at (0,0) {\includegraphics[width=5cm, height=3cm]{chapter2/figure1-1}} node[rotate=90, font=\tiny] at ([yshift=.5cm,xshift=.1cm]a.south east) {\textsuperscript{\textcopyright} wikipedia} ;
+\node[text width=5cm] at ([yshift=0.2cm]a.north) {\mytriangle{red}water on a dam has potential energy};
+\end{tikzpicture}
+\begin{tikzpicture} \node (a) at (0,0) {\includegraphics[width=5cm, height=3cm]{chapter2/figure1-10}} node[rotate=90, font=\tiny] at ([yshift=.5cm,xshift=.1cm]a.south east) {\textsuperscript{\textcopyright} wikipedia} ;
+\node[text width=5cm] at ([yshift=0.2cm]a.north) {\mytriangle{red}thermal energy refers to heat};
+\end{tikzpicture}
+\caption{Examples of different types of energy}
+\label{fig:{\chapterlabel}1}
+\end{marginfigure}
+
+
+
+
+\item[\docfilehook{The law of conservation energy}{}]
+In this chapter we will analyze energy changes associated with chemical reactions. In order to do this, we need to define the system and its surroundings. The system will be the chemical reaction often happening in a beaker, whereas the surroundings would be the area surrounding the beaker. The system plus its surroundings is called the universe. The beaker may lose energy, and in that case energy will flow from the system to the surroundings. Similarly, the system may gain energy, flowing from the surroundings to the beaker.
+In a closed system, the energy is being conserved and when one type of energy disappears, a different type of energy will appear. As an example, if you drop an object from the top of a building, originally the object had potential energy that converts into kinetic energy as the object gains speed. This is called the law of conservation of energy.
+
+
+   
+\item[\docfilehook{Energy units}{Energy units}] Two different units of energy are often employed: calories (cal) and joules (J). Joule is the SI unit of energy equal to $\text{kg}\cdot \text{m}^2/\text{s}^2$. One can transform calories to joules and joules to calories using the following conversion factor: 
+\begin{equation}
+\boxed{    1 \text{cal}=4.184 \text{J}   } \qquad\text{or}\qquad  \boxed{\frac{1\text{cal}}{4.184 \text{J}}}        
+\label{formula2:1}
+\end{equation}
+%\resizeableyellownote{2.5}{1}{Add Equation \ref{formula2:1} to your flashcard.}
+As a note, often you will read in food labels the caloric content of certain foods. In these labels, they use the unit Calorie, with capitalized C, that is not the same as a calorie. One Calorie represents a kilocalorie, and contains 1000calories.
+
+
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+Convert the following energy values:
+\begin{multicols}{2}
+\begin{enumerate}[label=(\alph*)]
+\item 50000 cal to Kcal
+\item 48000 J to cal
+\end{enumerate}
+\end{multicols}
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+We will use the conversion factor for kilo and the relationship between calorie and joule:\\
+(a) $50000 \text{cal}\times\frac{1 \text{kcal}}{1000 \text{cal}}=50\text{kcal}  $; (b) $ 48000 \text{J}\times\frac{1 \text{cal}}{4.184 \text{J}}=11472.2 \text{cal} $.\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Convert the following energy units:
+\begin{multicols}{2}
+\begin{enumerate}[label=(\alph*)]
+\item 200 cal to Kcal
+\item 7000 J to cal
+\end{enumerate}
+\end{multicols}
+\flushright Answer: (a) 0.2Kcal; (b) 1673 cal.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+
+\item[\docfilehook{Temperature }{Temperature }]
+%\begin{marginfigure}[-2cm]
+%      \includegraphics{chapter2/figure1-3}
+%      \caption{Some thermometers has different temperature scales.}
+%      \label{fig:marginfig}
+%   \end{marginfigure}
+Temperature indicates how hot or cold a substance is compared to another substance. Heat always flows from a substance with a higher temperature to a substance with a lower temperature until the temperatures of both are the same. When you drink hot coffee or touch a hot pan, heat flows to your mouth or hand, which is at a lower temperature. When you touch an ice cube, it feels cold because heat flows from your hand to the colder ice cube. Three units of temperature often employed are celsius ($^{\circ}$C, $\text{T}_C$), Fahrenheit ($^{\circ}$F, $\text{T}_F$) or Kelvin (K, $\text{T}_K$). If you need to convert temperature units from Fahrenheit  to celsius or from celsius to Fahrenheit you need to use the formulas below:
+%\resizeableyellownote{2.5}{1}{Add Equation \ref{formula2:2} to your flashcard.}
+\begin{equation}
+\boxed{   T_F = 1.8T_C  + 32   }
+\qquad
+\boxed{      T_F = 1.8T_K  -459.4   }
+\qquad
+\boxed{     T_K = T_C  + 273   }
+\label{formula2:2}
+\end{equation}
+
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+Convert 25 $^{\circ}$C to $^{\circ}$F.\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+\begin{enumerate}[label=\protect\circled{\color{white}\arabic*}]
+\item \begin{bf}Step one:\end{bf} list of the given variables.
+%%% DATA BOX
+\begin{tcbitemize}[raster columns=3, raster rows=3, enhanced, sharp corners, raster equal height=rows, raster force size=false, raster column skip=0pt, raster row skip = 0pt]
+%Empty corner and two headers
+\tcbitem[blankest, width=1cm]
+\tcbitem[header = helpful]
+\texta
+\tcbitem[header = harmful]
+\textb
+%First row
+\tcbitem[firstcol = internal]
+\textcn
+\tcbitem[swotbox = G]
+$T_c=25^{\circ}C$\\
+\tcbitem[swotbox = A]
+$T_F$
+\end{tcbitemize}%%% DATA BOX
+\break\item \begin{bf}Step two:\end{bf} use the formula $T_F = 1.8T_C  + 32$ to convert from $^{\circ}$C to $^{\circ}$F.
+ %%%% COMMENTED EQUATION
+\begin{equation*}
+    T_F = 1.8\,\,\,\,\tikzmark{I}{$T_c$} \,\,\,+ 32
+\end{equation*}
+\begin{tikzpicture}[overlay, remember picture,node distance =1.0cm]
+    \node (Idescr) [below left=of I ]{$25^{\circ}$};\draw[,->,thick] (Idescr) to [in=-90,out=90] (I);
+\end{tikzpicture}\vspace{5mm} %%%% COMMENTED EQUATION
+\item \begin{bf}Step three:\end{bf} solve for $T_F=1.8\times 25+32=77^{\circ}F$.
+\end{enumerate}
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Convert  $200^{\circ}$C to K.\\
+\flushright Answer: 473K.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+
+\item[\docfilehook{Thermodynamics}{}] 
+Thermochemistry is a subject of a broader field called thermodynamics, which studies the interconversion of energy (heat and other types) and mass. Thermodynamics study systems, like chemical reactions. The term system, refers to the part of the universe being study. Systems can be classified as: open, closed and isolated systems. An open system can exchange mass and energy with its surroundings, whereas a closed system can only exchange mass and not energy. Isolated systems cannot exchange neither mass nor energy with its surroundings.
+The state of a system is characterized by the values of its volume, pressure, temperature, energy and composition, so that of a system receives heat it will change its state. Energy, volume, pressure and temperature are called state functions--or state properties--, as these properties are determined by the state of the system, independently of the path used to reach that state. In another words, these properties are path-independent. For example, in a building, the floor location of a person would be a state function, as it would not matter the path the person took to reach that state. In contrast the amount of effort to make it to a specific floor will not be a state function, as it changes depending on the path used.
+
+
+
+
+
+
+\end{description}
+
+%   \begin{marginfigure}[-2cm]
+%      \includegraphics{chapter2/figure1-8}
+%      \caption{Metals have low specific heat, which means they heat up very fast.}
+%      \label{fig:marginfig}
+%   \end{marginfigure}
+
+\section{The first law of thermodynamics. From energy  to temperature}
+Materials can absorb heat and receive work. On one hand, think about a pizza in your over, or a cup of milk in the microwaves. These substances receive heat from the oven or in form of microwaves and they become hot. Heat transforms in an increase of temperature. 
+On the other hand, if you hammer a wall, the wall receives work from you and this work is translated to energy as the wall may break. Work and heat are both combined in a property called internal energy, $E$.
+Heat transform in a temperature change. Some substances like metals are able to increase its temperature very quickly with a small amount of heat received, whereas others need a larger amount of heat to rise up its temperature. Think about why you use oil to deep fried food? Why not using water? First of all, oil can rise its temperature very quickly and on top of that it does not boil easily.
+\sloppy
+ 
+
+
+\begin{description}
+\item[\docfilehook{Work}{}] 
+Think about what happens at a car's engine. In an engine, chemical energy is converted in movement and with this movement, a car is able to carry work. Work ($W$) is force ($F$) applied over a distance ($\Delta h$):
+\begin{equation*}
+    W = F\cdot \Delta h    = (P\cdot A) \cdot \Delta h
+\end{equation*}
+For the case of a gas confined in a cylindrical container, force is related to pressure times area ($A$). Therefore, if the pressure is constant as $A\cdot \Delta h$ equals to volume ($V$), we have that
+\begin{equation}
+\boxed{   W = -P\cdot \Delta V   }
+\label{formula2:92}
+\end{equation}
+where:
+\begin{where}
+ \item W represent work
+\item P is the pressure 
+ \item $\Delta V$ is the change of volume calculated as $V_{final}-V_{initial}$
+\end{where}
+
+The minus sign is just a convention, as in chemistry the work done by the surroundings to a system is considered positive, as the system gains work (energy). Therefore, when $\Delta V$ is negative because the system receives work, the value of $W$ has to be positive. In another words, the sign convention for work is:
+\begin{solutionbox}
+\[ W > 0 \; \text{the system receives work}\qquad and \qquad W < 0 \; \text{the system gives away work}\]
+\end{solutionbox}
+As a final note, the type of work that involves change in volume at constant pressure is normally called PV work.
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+Calculate the work (in $\text{L}\cdot \text{atm}$) involved in the expansion of a gas from 10L to 20L at constant external pressure of 2atm. Convert the value in joules using 1J=$101.3\text{L}\cdot \text{atm}$.\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+We will use Equation \ref{formula2:92} that related work with pressure and volume change:
+\[\text{W} = -\text{P}\cdot \Delta \text{V}=-2\text{atm}\cdot (20-10)\text{L}=-20\text{L}\cdot \text{atm} \]
+If we convert this value into J:
+\[-20\text{L}\cdot \text{atm}\times \frac{1J}{101.3\text{L}\cdot \text{atm}}=-0.2J \]
+As the value is negative, it means that the system gives away work.\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Calculate the work (in $\text{L}\cdot \text{atm}$) involved in the compresion of a gas from 10L to 5L at constant external pressure of 5atm. Convert the value in joules using 1J=$101.3\text{L}\cdot \text{atm}$.
+\flushright Answer: 25$\text{L}\cdot \text{atm}$, 0.24J.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+
+
+
+
+\item[\docfilehook{Heat capacity}{}] 
+The heat capacity $c$ of a material is defined as:
+\begin{equation}
+ c=\frac{\text{heat adsorbed}}{\text{temperature increase}}   
+\end{equation}
+The heat capacity is a characteristic property of each material that indicates the energy required to rise its temperature and can be expressed in $\text{cal}/^{\circ}\text{C}$ or $\text{J}/^{\circ}\text{C}$ units. As this property depends on the amount of matter, often times the heat capacity is expressed per mass as the specific heat capacity ($c_e$) or mole unit as the molar heat capacity $c_m$. For example, the specific heat of water is $1 \text{cal}/\text{g}^{\circ}\text{C}$ that is the same as $4.184 \text{J}/\text{g}^{\circ}\text{C}$. That means that we need to give 1 calorie in order to warm up one gram of water $1^{\circ}C$. Similarly, the specific heat of aluminum, a metal, is $0.2 \text{cal}/\text{g}^{\circ}\text{C}$ or $0.89\text{J}/\text{g}^{\circ}\text{C}$; that means the energy needed to rise the temperature of an aluminum gram is  0.2 calories of 0.89 J. Mind the difference between these two values: we need to give 1 cal in order to increase the temperature of a gram of water in $1^{\circ}C$, whereas we need to give 0.2 cal in order to increase the temperature of a gram of aluminum in $1^{\circ}C$. Why are these two numbers so different? The answer is because water and aluminum are different materials. Normally metals warp up very easily, that is, they need less heat to increase their temperature, whereas liquids need more heat to increase their temperature. That is why pans and cooking pots tend to be metallic. Mind the specific heat if water is a well know value that you need to be familiar with:
+\begin{equation}
+\boxed{   c_e^{\ce{H2O}} = 4.184 \text{J}/\text{g}^{\circ}\text{C} \qquad or \qquad  c_e^{\ce{H2O}} = 1 \text{cal}/\text{g}^{\circ}\text{C} }
+\label{formula2:9}
+\end{equation}
+
+
+\begin{center}
+\refstepcounter{table} \label{tab:{\chapterlabel}1}
+%\begin{table}[ht]
+\fontfamily{ppl}\selectfont
+\begin{tabular}{llll}
+\rowcolor{black!45}
+\toprule
+\multicolumn{4}{l}{\hypersetup{colorlinks,linkcolor={white}} \cellcolor{black}\color{white}\bfseries\small Table \ref{tab:{\chapterlabel}1} Values of specific heat for different materials} \\
+\midrule
+ \rowcolor{gray!10} Material  &     Specific heat ($\text{J}/\text{g}^{\circ}\text{C}$) &Material &     Specific heat ($\text{J}/\text{g}^{\circ}\text{C}$)\\
+\midrule
+   	\ce{H2O_{(l)}} & 4.184	 	  	  	&\ce{Fe_{(s)}}& 0.444	  	\\
+	ethyl alcohol$_{(l)}$& 2.460				&\ce{Au_{(s)}}& 0.129\\
+	vegetable oil$_{(l)}$& 1.790				&\ce{Cu_{(s)}}& 0.385\\
+	 \ce{NH3_{(l)}} & 4.700				&\ce{H2O_{(s)}}& 2.010\\
+	  Dry Air$_{(g)}$& 1.0035				&\ce{CO2_{(g)}} & 0.839\\
+ \bottomrule
+\end{tabular}\end{center}
+
+
+
+
+
+%     \begin{marginfigure}[-1cm]
+%      \includegraphics{chapter2/figure1-5}
+%      \caption{Oil has low specific heat. This allows achieving hight temperatures with small heat intakes.}
+%      \label{fig:marginfig}
+%   \end{marginfigure}
+\item[\docfilehook{Heat}{}] 
+When a materials receives heat, that heat normally becomes temperature as the temperature of the material increases. For example, if you warm milk in a microwaves, the milk\textquotesingle s temperature increases from room temperature (25$^{\circ}$C) to a higher temperature. How to estimate the temperature increase given the heat received? Or how to estimate the heat needed to increase the temperature of an object? We can use the following formula:
+%\resizeableyellownote{2.5}{1}{Add Equation \ref{formula2:3} to your flashcard.}
+\begin{equation}
+\boxed{    Q=m\cdot c_e\cdot  (T_{f}-T_{i})   } 
+\label{formula2:3}
+\end{equation}
+where:
+\begin{where}
+ \item $Q$ is the amount of heat received, either in cal or J.
+ \item $m$ is the mass of material in grams
+\item $c_e$ is the specific heat of the material (in $\text{cal}/\text{g}^{\circ}\text{C}$ or $\text{J}/\text{g}^{\circ}\text{C}$)
+\item $T_{f}-T_{i}=\Delta T$, is the temperature change from the initial to the final temperature
+\end{where}
+A system can receive or give away heat and this is indicated by the sign of $Q$. The sign convention for heat is:
+\begin{solutionbox}
+\[ Q > 0 \; \text{the system receives heat}\qquad and \qquad Q < 0 \; \text{the system gives away heat}\]
+\end{solutionbox}
+
+
+
+
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+How many calories are absorbed by a 45.2g piece of aluminum ($c_e=0.214\frac{cal}{g^{\circ}C}$) if its temperature rises from 25$^{\circ}$C to 50$^{\circ}$C. \\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+\begin{enumerate}[label=\protect\circled{\color{white}\arabic*}]
+\item \begin{bf}Step one:\end{bf} list of the given variables.
+%%% DATA BOX
+\begin{tcbitemize}[raster columns=3, raster rows=3, enhanced, sharp corners, raster equal height=rows, raster force size=false, raster column skip=0pt, raster row skip = 0pt]
+%Empty corner and two headers
+\tcbitem[blankest, width=1cm]
+\tcbitem[header = helpful]
+\texta
+\tcbitem[header = harmful]
+\textb
+%First row
+\tcbitem[firstcol = internal]
+\textcn
+\tcbitem[swotbox = G]
+$c_e=0.214\frac{cal}{g^{\circ}C}$\\
+$m=45.2g$\\
+$T_{initial}=25^{\circ}C$\\
+$T_{final}=50^{\circ}C$\\
+\tcbitem[swotbox = A]
+$Q$
+\end{tcbitemize}%%% DATA BOX
+\item \begin{bf}Step two:\end{bf} use the formula $Q=m\cdot c_e\cdot  (T_{final}-T_{initial})$ to temperature increase to heat absorbed:
+ %%%% COMMENTED EQUATION
+\vspace{10mm} \begin{equation*}
+     Q\,\,= \, \tikzmark{A}{m}\,\,\,\cdot \,\,\, \tikzmark{B}{$c_e\cdot$}\,\,\,  (\,\,\,\,\,\,\,\,\,\tikzmark{C}{$T_{final}$}\,\,\,\,\,\,\,\,\,-\,\,\,\,\,\,\,\,\,\tikzmark{D}{$T_{initial}$}\,\,\,\,\,\,\,\,\,)
+\end{equation*}
+\begin{tikzpicture}[overlay, remember picture,node distance =1.5cm]
+    \node (Adescr) [below left=of A ]{$45.2g$};\draw[,->,thick] (Adescr) to [in=-90,out=90] (A);
+   \node[red] (Bdescr) [below =of B]{$0.214\frac{cal}{g\cdot^{\circ}C}$}; \draw[red,->,thick] (Bdescr) to [in=-90,out=90] (B);
+   \node[purple] (Cdescr) [below right =of C]{$50^{\circ}C$};\draw[purple,->,thick] (Cdescr) to [in=-90,out=90] (C.south);
+   \node[blue,xshift=1cm] (Ddescr) [above right =of D]{$25^{\circ}C$};\draw[blue,->,thick] (Ddescr) to [in=45,out=-90] (D.north);
+\end{tikzpicture}\vspace{12mm} %%%% COMMENTED EQUATION
+\item \begin{bf}Step three:\end{bf} solve $Q=45.2\cdot 0.214\cdot  (50-25)=241.82cal$.
+\end{enumerate}
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+How many calories are absorbed by 100g of Gold ($c_e=0.0308\frac{cal}{g^{\circ}C}$) if its temperature rises from 25$^{\circ}$C to 100$^{\circ}$C. \\
+\flushright Answer: $Q=231cal$.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+
+\item[\docfilehook{First law of thermodynamics: the internal energy}{}] 
+The combination of work ($W$) and heat ($Q$) is called internal energy ($\Delta E$):
+\begin{equation}
+\boxed{    \Delta E=Q+W  } 
+\label{formula:{\chapterlabel}}
+\end{equation}
+The first law of thermodynamics--the law of conservation of energy--states that the energy of the universe is constant.
+
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+When a hot ballon inflates and deflates in order to change its height. It receives $10^3$J of heat and its volume increases from $3.0\times 10^{5}$L to $3.5\times 10^{5}$L at fixed external pressure of 1atm. Calculate the internal energy of the hot ballon, using 1J=$101.3\text{L}\cdot \text{atm}$.
+\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+We will use Equation \ref{formula2:92} that related work with pressure and volume change. As the resulting unit of work will be $ \text{L}\cdot \text{atm}$, we will directly convert the value into J: 
+\[\text{W} = -\text{P}\cdot \Delta \text{V}=-1\text{atm}\cdot (3.5\times 10^{5}-3.0\times 10^{5})\text{L}\times \frac{1\text{J}}{101.3\text{L}\cdot \text{atm}}=-493.6 \text{J} \]
+Now we will add the value of heat ($10^3$J) to the value of work to calculate the internal energy:
+\[\Delta E= Q+W=10^3 + (-493.6)=1493.6 \text{J} \]
+Overall, the hot ballon receives more heat that the work it gives away and hence the resulting internal energy is positive--the system gains energy.\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+When a hot ballon deflates, it receives $10^7$J of work from the external atmosphere and its temperature change from 90$^{\circ}$C to 25$^{\circ}$C. Given that the air initially contained in the ballon has a mass of $3\times 10^5$g and a specific heat of 1$\text{J}/\text{g}^{\circ}\text{C}$
+ Calculate the internal energy of the hot ballon.
+
+\flushright Answer:   $-9.5\times 10^6$J.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+\end{description}
+
+%In the previous example you needed to convert temperature into heat. In the next example, the heat is given and you need to calculate the final temperature of an object after it receives a certain amount of heat.
+%\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+%A 50g piece of aluminum ($c_e=0.214\frac{cal}{g\cdot^{\circ}C}$) initially at 25$^{\circ}$C absorbs 100cal. Calculate the final temperature of the aluminum piece.\\
+%\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+%\begin{enumerate}[label=\protect\circled{\color{white}\arabic*}]
+%\item \begin{bf}Step one:\end{bf} list of the given variables.
+%%%% DATA BOX
+%\begin{tcbitemize}[raster columns=3, raster rows=3, enhanced, sharp corners, raster equal height=rows, raster force size=false, raster column skip=0pt, raster row skip = 0pt]
+%%Empty corner and two headers
+%\tcbitem[blankest, width=1cm]
+%\tcbitem[header = helpful]
+%\texta
+%\tcbitem[header = harmful]
+%\textb
+%%First row
+%\tcbitem[firstcol = internal]
+%\textcn
+%\tcbitem[swotbox = G]
+%$c_e=0.214\frac{cal}{g\cdot^{\circ}C}$\\
+%$m=50g$\\
+%$T_{initial}=25^{\circ}C$\\
+%$Q=100cal$
+%\tcbitem[swotbox = A]
+%$T_{final}$\\
+%\end{tcbitemize}%%% DATA BOX
+%\item \begin{bf}Step two:\end{bf} use the formula $Q=m\cdot c_e\cdot  (T_{final}-T_{initial})$ that converts temperature increase to heat absorbed:
+% %%%% COMMENTED EQUATION
+%\vspace{10mm} \begin{equation*}
+%     \tikzmark{A}{Q}\,\,= \, \tikzmark{B}{m}\,\,\,\cdot \,\,\, \tikzmark{C}{$c_e\cdot$}\,\,\,  (T_{final}-\,\,\,\,\,\,\,\,\,\tikzmark{D}{$T_{initial}$}\,\,\,\,\,\,\,\,\,)
+%\end{equation*}
+%\begin{tikzpicture}[overlay, remember picture,node distance =1.5cm]
+%    \node (Adescr) [below left=of A ]{$100 cal$};\draw[,->,thick] (Adescr) to [in=-90,out=90] (A);
+%   \node[red] (Bdescr) [below =of B]{$50g$}; \draw[red,->,thick] (Bdescr) to [in=-90,out=90] (B);
+%   \node[purple] (Cdescr) [below right =of C]{$0.214\frac{cal}{g\cdot^{\circ}C}$};\draw[purple,->,thick] (Cdescr) to [in=-90,out=90] (C.south);
+%   \node[blue,xshift=0.7cm] (Ddescr) [above right =of D]{$25^{\circ}C$};\draw[blue,->,thick] (Ddescr) to [in=45,out=-90] (D.north);
+%\end{tikzpicture}\vspace{12mm} %%%% COMMENTED EQUATION
+%\item \begin{bf}Step three:\end{bf} solve $100=50\cdot 0.214\cdot  (T_{final}-25)$ for $T_{final}$:
+%\begin{align}
+%  100=50\cdot 0.214\cdot  (T_{final}-25)                   \tag*{divide by 50 in both sides}
+%    \\ \frac{100}{50}=0.214\cdot  (T_{final}-25)   \tag*{divide by 0.214 in both sides}    
+%        \\ \frac{100}{50\cdot 0.214}= (T_{final}-25)   \tag*{}             
+%                 \\ 9.34= (T_{final}-25)   \tag*{add 25 in both sides}             
+%                 \\ 9.34+25= T_{final}   \tag*{}             
+%                 \\ 34.34= T_{final}   \notag            
+%\end{align}
+%The final temperature of the aluminum piece is $34.34^{\circ}C$.
+%\end{enumerate}
+%\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+%A 200g piece of iron ($c_e=0.1\frac{cal}{g\cdot^{\circ}C}$) initially at 15$^{\circ}$C absorbs 1000cal. Calculate the final temperature of the metal piece.\\
+%\flushright Answer: $T_{final}=65^{\circ}C$.
+%\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+
+
+
+
+
+
+
+
+\section{Calorimetry}
+A calorimeter is a tool used to measure the exchange of heat happening in chemical reactions and calorimetry is the science that measures heat exchange by using calorimeters. There are tow types of calorimeters, very fancy and expensive ones called constant-volume calorimeters and more affordable ones, in the form of a coffee cup, called constant-pressure calorimeters. This section will show you how to carry calorimetric calculations. 
+\sloppy
+\begin{description}
+\item[\docfilehook{The calorimeter}{The calorimeter}] 
+A calorimeter is device used to measure the energy exchanged in a chemical reaction--we call this molar heat of reaction, $\Delta Q_{r}$. In essence, a calorimeter is a closed system that does not let the heat come though its walls. By measuring the temperature change inside the calorimeter we can compute the energy exchange in a chemical reaction happening inside the calorimeter. If the temperature inside a calorimeter increases, this means that the reaction releases energy. In the contrary, if the temperature inside a calorimeter decreases, this means that the reaction consumes energy. There are two different types of calorimeters: constant-pressure and constant-volume calorimeters. As a note, $\Delta Q_{r}$ is called molar heat of reaction as it represents energy per mole, with units of kJ/mol.
+
+\item[\docfilehook{Exothermic and endothermic reactions}{Exothermic and endothermic reactions}] 
+Some reactions release heat and are called exothermic. Others absorb heat and are called endothermic. Think for example the combustion of the gas in a cooking stove, it produces heat and hence the chemical reaction happening is exothermic. Differently, if you cook bread, it needs heat to rise. Similarly, if you melt an ice cube you need to give energy to the cube so that it becomes water. These are examples of endothermic reactions. Endothermic reactions have positive  $\Delta Q_{r}$ whereas exothermic reactions have negative $\Delta Q_{r}$.
+\item[\docfilehook{Constant-pressure calorimeter}{ }] 
+A constant-pressure calorimeter is the simplest of all calorimeters and is called constant-pressure as the pressure inside the calorimeter is constant and equal to the atmospheric pressure. A constant-pressure calorimeter is just a double coffee cup covered with a lit. Inside this cup a chemical reaction occurs in a liquid phase. If the reaction produces any gases as the cup if just covered with a lit, the pressure will always be equal to the atmospheric pressure as the gas can scape through the lit. The formula used in calorimetry with a constant-pressure calorimeter has only two terms. Let us use a reaction that produced heat as an example. Inside a constant-pressure calorimeter, you introduced two reagents, and a reaction happens producing heat. The heat exchanged from the reaction (first term) changes the temperature of the liquid inside the calorimeter (second term). At the same time, we assume that the walls of the calorimeter do not absorb heat. The formula used in calorimetry with a constant-pressure calorimeter is the following: 
+\begin{equation*}\begin{split}
+ 0=n\cdot\Delta Q_{r}+\Delta Q_{water}  \quad \textcolor{blue}{\text{constant pressure}}
+\end{split}\end{equation*}
+where:
+\begin{where}
+ \item $n\cdot\Delta Q_{r}$   is the heat exchanged due to a chemical reaction
+\item $\Delta Q_{water}$    is the heat received or released by water 
+\end{where}
+
+    
+The water contribution is given by the heat formula given above. After we plug the formula of the heat into the formula above we arrive to the constant-pressure calorimetry formula:%\resizeableyellownote{2.5}{1}{Add this formula to your flashcard.}
+\begin{equation*}\begin{split}
+\boxed{  0=n\cdot\Delta Q_{r}+V\cdot d\cdot  c_{e}^{\ce{sol}}\cdot  (T_{f}-T_{i})      } \quad \textcolor{blue}{\text{constant pressure}}
+\end{split}\end{equation*}
+where:
+\begin{where}
+ \item $\Delta Q_{r}$   is the heat exchanged due to a chemical reaction in $J/mol$
+  \item $n$   is the number of moles of the limiting reagent 
+\item $V$ is the volume of water in mL contained in the calorimeter 
+\item $d$ is the density of the solution in g/mL 
+ \item $c_{e}^{\ce{sol}}$  is the specific heat of the solution: tend to be similar to water, $4.184 \text{J}/\text{g}^{\circ}\text{C}$
+\item $T_{f}-T_{i}=\Delta T$, is the temperature change from the initial to the final temperature
+\end{where}
+
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+We mix 5mL of \ce{NaOH} 0.5M with 5mL of \ce{HCl} 0.5M both at 25$^{\circ}$C in a constant-pressure calorimeter. The final temperature inside the calorimeter is 27$^{\circ}$C. Calculate the heat of reaction if the solution density is 1g/mL and the specific heat of the solution is 4.184$\text{J}/^{\circ}\text{C}$.
+\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+%%% DATA BOX
+\begin{tcbitemize}[raster columns=3, raster rows=3, enhanced, sharp corners, raster equal height=rows, raster force size=false, raster column skip=0pt, raster row skip = 0pt]
+%Empty corner and two headers
+\tcbitem[blankest, width=1cm]
+\tcbitem[header = helpful]
+\texta
+\tcbitem[header = harmful]
+\textb
+%First row
+\tcbitem[firstcol = internal]
+\textcn
+\tcbitem[swotbox = G]
+$n=5\times 10^{-3}L\cdot 0.5M$=2.5$\times 10^{-3}$moles\\
+$V=10mL$\\
+$d=1g/mL$\\
+$T_{f}=27^{\circ}C$\\
+$T_{i}=25^{\circ}C$\\
+$c_{e}^{\ce{H2O}}=\\4.184 \text{J}/\text{g}^{\circ}\text{C}$\\
+\tcbitem[swotbox = A]
+$\Delta Q_{r}$\\
+\end{tcbitemize}%%% DATA BOX
+We have all data needed to solve the calorimetry formula. We have the moles of the limiting reagent, the overall volume of the mixture, the density of the mixture, the temperature change and the specific heat of the solution. Plugging all values into the calorimetry formula we have:\\
+\begin{equation*}\begin{split}
+ 0=n\cdot\Delta Q_{r}+V\cdot d\cdot  c_{e}^{\ce{sol}}\cdot  (T_{f}-T_{i})      \\
+0=2.5\times 10^{-3}mol\cdot\Delta Q_{r}+10g\cdot 4.184 \text{J}/\text{g}^{\circ}\text{C}\cdot  (27^{\circ}C-25^{\circ}C)  \\
+ \end{split}\end{equation*}
+Solving for $\Delta Q_{r}$ we obtain $-33472J/mol$ that is the same as $-33.5KJ/mol$. As the value is negative, it means that the reaction produced energy and hence is exothermic.
+\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+We mix 2.5mL of \ce{NaOH} 0.5M with 2.5mL of \ce{HCl} 0.5M both at 25$^{\circ}$C in a constant-pressure calorimeter. The heat of reaction is -40KJ/mol. Calculate the final temperature inside the calorimeter, if the solution density is 1g/mL and the specific heat of the solution is 4.184$\text{J}/g^{\circ}\text{C}$.
+\\
+\flushright Answer: 27.39$^{\circ}$C.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+
+
+
+
+
+\item[\docfilehook{Constant-volume calorimeter}{ }] 
+A constant-volume calorimeter--also know as a bomb calorimeter--is a more complex and costly calorimeter in which normally gas phase reactions occur. This type of calorimeters are rigid and even if gas is produced the volume of the container will not change--that is why is called a constant-volume calorimeter. Constant-volume calorimeters are used to calculate the energy value of food--and for example calculate the calories in a bag of chips. 
+
+
+The formula to cary calorimetric calculations with a constant-volume calorimeter has three terms: the first term represents the energy exchanged due to the reaction, the second term represents the energy exchanged by water in the calorimeter, and the last term represents the heat exchanged by the walls of the calorimeter. The formula used in a constant-volume calorimeter is the following: 
+\begin{equation*}\begin{split}
+ 0=n\cdot\Delta Q_{r}+\Delta Q_{water}+\Delta Q_{walls} 
+\end{split}\end{equation*}
+where:
+\begin{where}
+ \item $n\cdot\Delta Q_{r}$   is the heat exchanged due to a chemical reaction
+\item $\Delta Q_{water}$    is the heat received or released by water 
+ \item $\Delta Q_{walls}$   is the heat absorbed by the walls
+\end{where}
+
+%    
+%The water contribution is given by the heat formula given above and the walls contribution is the result of the effective heat capacity of the calorimeter, $c^{cal}$. The larger the effective heat capacity of the calorimeter the more heat it absorbs from the reaction. Heat capacity is the same idea as specific heat but in different units. After we plug these two contribution into the formula above we arrive to the calorimetry formula:%\resizeableyellownote{2.5}{1}{Add this formula to your flashcard.}
+\begin{equation*}\begin{split}
+\boxed{  0=n\cdot\Delta Q_{r}+m\cdot c_{e}^{\ce{H2O}}\cdot  (T_{f}-T_{i})   +c^{cal}\cdot  (T_{f}-T_{i})   } \quad \textcolor{blue}{\text{Constant-volume}}
+\end{split}\end{equation*}
+where:
+\begin{where}
+ \item $\Delta Q_{r}$   is the heat exchanged due to a chemical reaction in $J/mol$
+  \item $n$   is the number of moles reacted inside the calorimeter
+\item $m$ is the mass of water contained in the calorimeter 
+ \item $c_{e}^{\ce{H2O}}$  is the specific heat absorbed of water: $4.184 \text{J}/\text{g}^{\circ}\text{C}$
+  \item $c^{cal}$  is the heat capacity of the calorimeter also known as calorimeter factor
+\item $T_{f}-T_{i}=\Delta T$, is the temperature change from the initial to the final temperature
+\end{where}
+
+
+
+
+
+
+
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+A 3 mol-sample of a chemical is burned in a constant-volume calorimeter with 10g of water and a heat capacity of 10$K\text{J}/^{\circ}\text{C}$. Calculate the heat of reaction knowing that the initial temperature of the water inside the calorimeter is $25^{\circ}C$ and the final $40^{\circ}C$.
+\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+%%% DATA BOX
+\begin{tcbitemize}[raster columns=3, raster rows=3, enhanced, sharp corners, raster equal height=rows, raster force size=false, raster column skip=0pt, raster row skip = 0pt]
+%Empty corner and two headers
+\tcbitem[blankest, width=1cm]
+\tcbitem[header = helpful]
+\texta
+\tcbitem[header = harmful]
+\textb
+%First row
+\tcbitem[firstcol = internal]
+\textcn
+\tcbitem[swotbox = G]
+$n=3mol$\\
+$m=10g$\\
+$T_{f}=40^{\circ}C$\\
+$T_{i}=25^{\circ}C$\\
+$c^{cal}=10^{4} \text{J}/^{\circ}\text{C}$\\
+$c_{e}^{\ce{H2O}}=\\4.184 \text{J}/\text{g}^{\circ}\text{C}$\\
+\tcbitem[swotbox = A]
+$\Delta Q_{r}$\\
+\end{tcbitemize}%%% DATA BOX
+We have all data needed to solve the calorimetry formula. We have the moles of chemical inside the calorimeter, the heat capacity of the calorimeter, the initial and final temperature of water, and the amount of water. Mind that the specific heat of water is always given and you need to remember the value. Also and more importantly mind that the units of the heat capacity of the calorimeter are $K\text{J}/^{\circ}\text{C}$, whereas the units of the specific heat of water are $\text{J}/\text{g}^{\circ}\text{C}$ and hence, we need to convert $KJ$ into $J$; that is the reason we use $10000 \text{J}/^{\circ}\text{C}$ as the heat capacity of the calorimeter. Plugging all values into the calorimetry formula we have:\\
+\begin{equation*}\begin{split}
+0=3mol\cdot\Delta Q_{r}+10g\cdot 4.184 \text{J}/\text{g}^{\circ}\text{C}\cdot  (40^{\circ}C-25^{\circ}C)  \\
++10000 \text{J}/^{\circ}\text{C}\cdot  (40^{\circ}C-25^{\circ}C) \end{split}\end{equation*}
+Solving for $\Delta Q_{r}$ we obtain $-50209J/mol$ that is the same as $-50.209KJ/mol$. As the value is negative, it means that the reaction produced energy and hence is exothermic.
+\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+A 2 mol-sample of a chemical reacts in a  constant-volume calorimeter with 20g of water and a heat capacity of 11$K\text{J}/^{\circ}\text{C}$. Calculate the heat of reaction knowing that the temperature of water inside the calorimeter rises $10^{\circ}C$.
+\\
+\flushright Answer: $-55KJ/mol$.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+\end{description}
+  
+  
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}
+\resizebox{.9\textwidth}{!}{
+	  \begin{tikzpicture} \node (a) at (0,0) {\includegraphics[width=4.5cm, height=4.5cm]{chapter2/figure1-6}} node[rotate=90, font=\tiny] at ([yshift=.5cm,xshift=.1cm]a.south east) {\textsuperscript{\textcopyright} wikipedia} ;
+\node[text width=5cm, fontscale=.1] at ([yshift=0.8cm]a.north) {\scalebox{0.8}{\baselineskip=8pt \mytriangle{red}{\small A constant-volume calorimeter }}};
+ 
+ \node (b) at (6cm,0) {\includegraphics[width=4.5cm, height=4.cm]{chapter2/figure1-7}} node[rotate=90, font=\tiny] at ([yshift=.5cm,xshift=.1cm]b.south east) {\textsuperscript{\textcopyright} wikipedia} ;
+\node[text width=5cm, fontscale=0.1] at ([yshift=0.8cm]b.north) {\scalebox{0.8}{\mytriangle{red}{\small A constant-pressure calorimeter }}};
+
+% \node (c) at (12cm,0) {\includegraphics[width=5cm, height=5cm]{chapter2/figure1-9}} node[rotate=90, font=\tiny] at ([yshift=.5cm,xshift=.1cm]c.south east) {\textsuperscript{\textcopyright} PxFuel} ;
+%\node[text width=4cm] at ([yshift=0.8cm]c.north) {\mytriangle{red}{\small Plants transform sunlight into chemical energy}};
+%
+%
+% \node (d) at (18cm,0) {\includegraphics[width=5cm, height=5cm]{chapter2/figure1-10}} node[rotate=90, font=\tiny] at ([yshift=.5cm,xshift=.1cm]c.south east) {\textsuperscript{\textcopyright} Needpix} ;
+%\node[text width=4cm] at ([yshift=0.8cm]c.north) {\mytriangle{red}{\small Heat is thermal energy}};
+\end{tikzpicture}
+}
+
+\caption{Different types of calorimeters. A constant-volume calorimeter is also called a bomb calorimeter. A constant-pressure calorimeter is also called a coffee-cup calorimeter.}
+\label{fig:{\chapterlabel}2}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Enthalpy}
+In the last section we have seen that when a chemical reaction proceeds it exchanges energy with the surroundings. This energy can be measured in many different conditions. When it is measured at constant pressure--these are regular conditions in chemistry, think about a reaction happening at a beaker--this energy change has a different name: it is called enthalpy and is represented with the symbol $\Delta H_f^{\circ}$. In this section we will cover the different types of enthalpies depending on the type of reaction--formation or reaction--and we will find out how to compute the enthalpy change for a reaction using tables of standard enthalpies given at the end of the chapter.
+
+
+\sloppy
+\begin{description}
+
+  
+  \item[\docfilehook{What is enthalpy?}{ }] 
+You want to think about enthalpy as heat. There are different ways to measure the heat exchanged in a system--as constant-pressure heat or constant-volume heat. Enthalpy, is the constant-pressure heat. It is important in chemistry, as many chemical reactions happen at constant pressure, that is, in open containers in contact with the atmosphere. Enthalpy, is indeed related to the internal energy
+\begin{equation*}\begin{split}
+H=U+PV 
+\end{split}\end{equation*}
+Working at constant pressure we have
+  \begin{equation*}\begin{split}
+\Delta H=\Delta U+P\Delta V 
+\end{split}\end{equation*}
+as $\Delta U =Q-P\Delta V$ we have
+  \begin{equation*}\begin{split}
+\Delta H= Q_{p} 
+\end{split}\end{equation*}
+where $Q_{p} $ means heat measured at constant pressure. 
+\item[\docfilehook{Table of standard enthalpies}{Table of standard enthalpies}] 
+The values of enthalpies are tabulated at the end of the chaper. The term standard refers to standard pressure conditions (1 atm) and is indicates by a degree sign on the top right side ($\Delta H^{\circ}$). Let us see how to use this table. If you look for the standard enthalpy of C--an element--from the table you might find several values. The values of graphite carbon is $\Delta H_f^{\circ}=0$KJ/mol. Differently, the values for diamond carbon is different than zero, being $\Delta H_f^{\circ}=1.0$KJ/mol. Similarly, the value for gas carbon is not zero also, being $\Delta H_f^{\circ}=716.67$KJ/mol. This is because the nature state of carbon is in the form of graphite. That is, the most common way in which we find carbon in nature is in the form of graphite and not diamond or gas. Let us find the standard enthalpy for molecular nitrogen, \ce{N2(g)}--another element. If you look into the table you will find a value of $\Delta H_f^{\circ}=0$KJ/mol, again because the natural state of nitrogen is in the form of gas \ce{N2}. How much is the standard enthalpy of gas hydrogen, \ce{H2}? If you look in the table, the value is also $\Delta H_f^{\circ}=0$KJ/mol. The rule of thumb is: elements on its natural state have zero $H_f^{\circ}$. Below we will explain more about the meaning of natural state.
+Now, look for the standard enthalpy of carbon monoxide gas, \ce{CO(g)}. The value should not be zero, as carbon dioxide is not an element and is made of two different types of atoms. Indeed, in the table we find $\Delta H_f^{\circ}(\ce{CO_{(g)}})=-110.5$KJ/mol.
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+Using the enthalpy tables at the end of the chapter, locate the enthalpy values for:  \ce{CaS_{(s)}}, \ce{AlCl3_{(s)}} and \ce{H2O_{(l)}}.
+\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+The enthalpy of calcium sulfide in solid state (\ce{CaS_{(s)}}) is -482.4KJ/mol. For the case of aluminum  chloride in solid state too (\ce{AlCl3_{(s)}}), the enthalpy is -705.63KJ/mol. Finally, the enthalpy of liquid water is -285.8KJ/mol.
+\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Using the enthalpy tables at the end of the chapter, locate the enthalpy values for:  \ce{I2_{(aq)}},  \ce{F2_{(g)}} and  \ce{C_{diamond}_{(s)}}.
+\\
+\flushright Answer: 23, 0, 1.9KJ/mol.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+\item[\docfilehook{Natural state of an element}{Natural state of an element}]
+The natural state of an element is the most stable state in which we find this element in nature. For example, you can find Aluminum as a solid, liquid or gas. However, its natural state is solid, as we find Al in nature as a solid. That is the reason why $\Delta H_f^{\circ}(\ce{Al_{(g)}})=314$KJ/mol, whereas $\Delta H_f^{\circ}(\ce{Al_{(s)}})=0$KJ/mol. In general, for metals, its natural state is solid. For non-metallic elements, such as hydrogen, oxygen, nitrogen, fluorine, chlorine, its natural state is in the form of a diatomic gas molecule. For example, $\Delta H_f^{\circ}(\ce{H2_{(g)}})=0$KJ/mol, $\Delta H_f^{\circ}(\ce{N2_{(g)}})=0$KJ/mol or $\Delta H_f^{\circ}(\ce{O2_{(g)}})=0$KJ/mol. For the case of carbon, its natural state is graphite, $\Delta H_f^{\circ}(\ce{C_{graphite}_{(s)}})=0$KJ/mol. Molecules such as \ce{H2O} or \ce{NO} have standard enthalpy different than zero. Mind that molecules are not elements, and hence are made of different elements.
+\begin{center}
+\refstepcounter{table} \label{tab:{\chapterlabel}2}
+%\begin{table}[ht]
+\fontfamily{ppl}\selectfont
+\begin{tabular}{llll}
+\rowcolor{black!45}
+\toprule
+\multicolumn{4}{l}{\hypersetup{colorlinks,linkcolor={white}} \cellcolor{black}\color{white}\bfseries\small Table \ref{tab:{\chapterlabel}2} Standard states for different elements. For all $\Delta H_f^{\circ}=0$KJ/mol} \\
+\midrule
+ \rowcolor{gray!10} Element &     Standard state &	Element &      Standard state\\
+\midrule
+  Hydrogen 		& 	\ce{H2_{(g)}}	 	  	  &	Oxygen 		& 	\ce{O2_{(g)}}	  	\\
+  Nitrogen 		& 	\ce{N2_{(g)}}	 	  	  &	Chlorine 		& 	\ce{Cl2_{(g)}}	  	\\
+    Iron 		& 	\ce{Fe_{(s)}}	 	  	  &	Aluminium 		& 	\ce{Al_{(s)}}	  	\\
+   Carbon 		& 	\ce{C_{graphite}_{(s)}}	 	  	  &	Phosphorus 		& 	\ce{P4_{(s)}}	  	\\
+    Fluorine		& 	\ce{ F2_{(g)}}	 	  	  &	 Bromine		& 	\ce{ Br_{(l )}}	  	\\
+    	Mercury	& 	\ce{ Hg_{(l)}}	 	  	  &	Sulfur 		& 	\ce{ S8_{(s)}}	  	\\
+    	Iodine	& 	\ce{ I2_{(s)}}	 	  	  &Silicon	 		& 	\ce{ Si_{(s)}}	  	\\
+ %   		& 	\ce{ _{ }_{( )}}	 	  	  &	 		& 	\ce{ _{( )}}	  	\\
+ \bottomrule
+\end{tabular}\end{center}
+\item[\docfilehook{Formation reactions: standard enthalpy of formation}{}] 
+
+The formation reaction starts with natural-state elements (e.g. \ce{H2}, \ce{N2}, etc.) to form a chemical. For example, the formation reaction of NO is given by:
+\begin{center}\ce{N2_{(g)} + O2_{(g)} -> 2NO_{(g)}}\end{center}
+On the products side we have the chemical formed (NO) whereas on the reactant side we have the elements that make NO on its natural state (\ce{H2} and \ce{N2})
+The enthalpy associated with this reaction is called standard enthalpy of formation $\Delta H_f^{\circ}(\ce{NO_{(g)}})$. This value is often listed on the right of the reaction:\\
+\ce{ N2_{(g)} + O2_{(g)} -> 2NO_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_f=181KJ$
+ \item[\docfilehook{ $\Delta H^{\circ}_R$ and $\Delta H^{\circ}_f$ }{$\Delta H^{\circ}_R$ and $\Delta H^{\circ}_f$ }]
+Consider the following two reactions:
+\begin{center}\ce{ N2_{(g)} + O2_{(g)} -> 2NO_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_f=181KJ$\end{center}
+\begin{center}\ce{ Fe2O3_{(s)} +  3CO_{(g)} -> 2Fe_{(s)} + 3CO2_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_R=-25KJ$\end{center}
+The first example represents a formation reaction and thus the enthalpy is labeled as $\Delta H^{\circ}_f$. In contrast, the second reaction is not a formation reaction. This is because the reactants are not elements on its natural state: \ce{CO_{(g)}} and \ce{Fe2O3_{(s)}} has enthalpies different than zero. For this reason, the second enthalpy is labeled as $\Delta H^{\circ}_R$, and is called standard enthalpy of reaction.
+%\item[\docfilehook{How to indicate $\Delta H^{\circ}_R$ in a reaction }{How to indicate $\Delta H^{\circ}_R$ in a reaction}]
+%Normally in chemical reaction the value of $\Delta H^{\circ}_R$ can be written in two different ways. You can see the enthalpy added in the reaction as a reactant or product or you can find the enthalpy written on the right side of the reaction. For example, in the first example above--the endothermic reaction--you can write:
+%\ce{ N2_{(g)} + O2_{(g)} -> 2NO_{(g)} + 181KJ} 
+%or you can find:
+%\ce{ N2_{(g)} + O2_{(g)} -> 2NO_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_R=181KJ$.
+%For the second example above, the exothermic reaction, you can indicate the enthalpy like:
+%\ce{ 2NO_{(g)} + O2_{(g)} + 114KJ -> 2NO2_{(g)}} 
+%or you can find:
+%\begin{center}\ce{ N2_{(g)} + O2_{(g)} -> 2NO_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_R=-114KJ$.\end{center}
+%Note that in exothermic reaction, the enthalpy value is indicated as a product as the reaction produces heat, whereas in endothermic reaction it is indicated as a reactant, as these reactions consume heat.
+%
+
+
+
+
+
+
+
+
+
+\item[\docfilehook{Standard enthalpy change for a reaction}{Standard enthalpy change for a reaction}] 
+In order to calculate the standard enthalpy for a reaction you need to use the following formula:
+%\resizeableyellownote{2.5}{1}{Add this formula to your flashcard.}
+\begin{equation*}\begin{split}
+\boxed{  \Delta H^{\circ}_R=\Delta H^{\circ}_{products}-\Delta H^{\circ}_{reactants}  } \quad \textcolor{blue}{\text{Enthalpy change}}
+\end{split}\end{equation*}
+where:
+\begin{where}
+ \item $\Delta H^{\circ}_R$   is the standard enthalpy change of the reaction
+  \item $\Delta H^{\circ}_{products}$   is the standard enthalpy  of all products
+\item $\Delta H^{\circ}_{reactants} $ is the standard enthalpy  of all reactants
+ \end{where}
+ 
+Now, imagine we need to calculate the change of standard enthalpy for the following reaction:
+%\begin{center}\ce{N2_{(g)} + O2_{(g)} -> 2NO_{(g)}}\end{center}
+%In the case of the reaction above, we need to locate three enthalpies from the table: $\Delta H_f^{\circ}(\ce{N2_{(g)}})$, $\Delta H_f^{\circ}(\ce{O2_{(g)}})$, $\Delta H_f^{\circ}(\ce{NO_{(g)}})$. If we look in the tables, you will find the values: $\Delta H_f^{\circ}(\ce{N2_{(g)}})=0$KJ/mol and $\Delta H_f^{\circ}(\ce{O2_{(g)}})=0$KJ/mol. This makes sense, as these are the natural states of nitrogen and oxygen. Differently, $\Delta H_f^{\circ}(\ce{NO(g)})=90.29$KJ/mol. Now, in order to compute $\Delta H^{\circ}_R$ we need to take into account that the reaction involves two \ce{NO} molecules. Let us set up the formula:
+%\begin{equation*}\begin{split}
+%  \Delta H^{\circ}_R= \Delta H^{\circ}_{products}-\Delta H^{\circ}_{reactants}= \Big(2\cdot \Delta H_f^{\circ}(\ce{NO_{(g)}})    \Big)-\Big(\Delta H_f^{\circ}(\ce{N2_{(g)}})+ \Delta H_f^{\circ}(\ce{O2_{(g)}}) \Big)      \\
+%  =     \Big(2\cdot90.29  \Big)-\Big( 0+0 \Big)= 181KJ
+%\end{split}\end{equation*}
+%This reaction is endothermic, that means it consumes energy.
+%Let's work on another example and calculate $\Delta H^{\circ}_R$ for the reaction:
+\begin{center}\ce{2NO_{(g)} + O2_{(g)} -> 2NO2_{(g)}}\end{center}
+We need to locate three enthalpies from the table: $\Delta H_f^{\circ}(\ce{NO_{(g)}})$, $\Delta H_f^{\circ}(\ce{O2_{(g)}})$, $\Delta H_f^{\circ}(\ce{NO2_{(g)}})$. If you locate these values in the table you will see $\Delta H_f^{\circ}(\ce{O2_{(g)}})=0$KJ/mol, whereas $\Delta H_f^{\circ}(\ce{NO_{(g)}})=90.29$KJ/mol and $\Delta H_f^{\circ}(\ce{NO2_{(g)}})=33.2$KJ/mol. Using the formula for $\Delta H^{\circ}_R$ we have:
+\\$ \Delta H^{\circ}_R= \Delta H^{\circ}_{products}-\Delta H^{\circ}_{reactants}=$
+\begin{equation*}\begin{split}
+  = \Big[2\cdot \Delta H_f^{\circ}(\ce{NO2_{(g)}})    \Big]-\Big[2\cdot \Delta H_f^{\circ}(\ce{NO_{(g)}})+ \Delta H_f^{\circ}(\ce{O2_{(g)}}) \Big] =\\
+  =     \Big[2\cdot 33.2  \Big]-\Big[ 2\cdot 90.29+0 \Big]= -114KJ
+\end{split}\end{equation*}
+This reaction is exothermic and releases heat.
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+Using the enthalpy table, calculate $\Delta H^{\circ}_R$ for the following reactions: 
+\begin{enumerate}[label=(\alph*)]
+\item \ce{ 4H2_{(g)} + O2_{(g)} -> 2H2O_{(l)} }
+\item \ce{ 3H2_{(g)} + N2_{(g)} -> 2NH3_{(g)} }
+\item \ce{ 2Al_{(s)} + 3Cl2_{(g)} -> 2AlCl3_{(s)} }
+\end{enumerate}
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+In order to answer all questions, we need a set of $\Delta H^{\circ}_f$ values: $\Delta H^{\circ}_f(\ce{H2_{(g)}})$, $\Delta H^{\circ}_f(\ce{O2_{(g)}})$, $\Delta H^{\circ}_f(\ce{N2_{(g)}})$, $\Delta H^{\circ}_f(\ce{Al_{(s)}})$ are all zero, whereas $\Delta H^{\circ}_f(\ce{H2O_{(l)}})=-285.8KJ/mol$, $\Delta H^{\circ}_f(\ce{NH3_{(g)}})=-45.0KJ/mol$ and $\Delta H^{\circ}_f(\ce{AlCl3_{(s)}})=-705.63KJ/mol$. For the first example, we have:
+\begin{equation*}\begin{split}
+  \Delta H^{\circ}_R= \Big[2\cdot \Delta H_f^{\circ}(\ce{H2O_{(l)}})    \Big]-\Big[4\cdot \Delta H_f^{\circ}(\ce{H2_{(l)}})+ \Delta H_f^{\circ}(\ce{O2_{(g)}}) \Big]      \\
+  =     \Big[2\cdot -285.8  \Big]-\Big[ 4\cdot 0+0 \Big]= -572KJ
+\end{split}\end{equation*}
+For the second example:
+\begin{equation*}\begin{split}
+  \Delta H^{\circ}_R= \Big[2\cdot \Delta H_f^{\circ}(\ce{NH3_{(g)}})    \Big]-\Big[2\cdot \Delta H_f^{\circ}(\ce{Al_{(s)}})+ 3\cdot \Delta H_f^{\circ}(\ce{Cl2_{(g)}}) \Big]      \\
+  =     \Big[2\cdot -45 \Big]-\Big[2\cdot 0+3\cdot0 \Big]= -90KJ
+\end{split}\end{equation*}
+Finally, for the last reaction:
+\begin{equation*}\begin{split}
+  \Delta H^{\circ}_R= \Big[2\cdot \Delta H_f^{\circ}(\ce{AlCl3_{(s)}})    \Big]-\Big[3\cdot \Delta H_f^{\circ}(\ce{H2_{(g)}})+ \Delta H_f^{\circ}(\ce{N2_{(g)}}) \Big]      \\
+  =     \Big[2\cdot -705.63  \Big]-\Big[3\cdot 0+0 \Big]= -1411KJ
+\end{split}\end{equation*}
+\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Using the enthalpy table, calculate $\Delta H^{\circ}_R$ for the following reaction: 
+\begin{center}\ce{ Fe2O3_{(s)} +  3CO_{(g)} -> 2Fe_{(s)} + 3CO2_{(g)} }\end{center}   
+\flushright Answer: $-25KJ$.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+
+
+
+
+
+  \item[\docfilehook{Heat-Mole conversions}{Heat-Mole conversions}] 
+Remember that a chemical reaction can be translated into a series of conversion factors that relate the moles of reactants with the products or with other reactants. At the same time, a chemical reaction involving heat can be converted into a series of conversion factors that related energy and the moles of reactants and products. 
+For the exothermic reaction:
+\begin{center}\ce{ 2H2_ {(g)}  + O2_{(g)}   ->  2H2O_ {(g)} } \hspace*{0pt}\hfill $\Delta H=-572KJ$.\end{center}
+the moles of hydrogen are related to heat as:
+\begin{equation*}
+\boxed{   \frac{\text{2 moles of }\ce{H2}}{\text{-572 KJ }}\ \text{ or  } \frac{ \text{-572 KJ } }{ \text{2 moles of } \ce{H2} }\   }
+\end{equation*}
+Similarly, we can relate energy with moles of \ce{O2}  or moles of water:
+
+\begin{equation*}
+\boxed{   \frac{\text{1 moles of }\ce{O2}}{\text{-572 KJ }}\ \text{ or  } \frac{\text{-572 KJ } }{ \text{1 moles of } \ce{O2} }\   }\quad
+\boxed{   \frac{\text{2 moles of }\ce{H2O}}{\text{-572 KJ }}\ \text{ or  } \frac{ \text{-572 KJ }}{  \text{2 moles of } \ce{H2O} }\   }
+\end{equation*}
+
+
+We will use these relationships to convert moles of reactant or products into heat.
+  
+  \begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+Hydrogen reacts with nitrogen to produce ammonia (\ce{NH3}) according to the following reaction
+\begin{center}\ce{ 3H2_{(g)} + N2_{(g)} -> 2NH3_{(g)} } \hspace*{0pt}\hfill $\Delta H=-92KJ$.\end{center}
+
+Calculate: (a) the enthalpy of reaction; (b) indicate whether the reaction is endo or exothermic; (c) calculate the heat exchanged when produced 5 moles of ammonia.\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+(a) the heat of reaction is -92KJ, and (b) the reaction is exothermic as the heat appears as a product. This means the reaction produces heat.
+(c) We will use the conversion factor that relates ammonia with heat and will set up the moles of ammonia on the bottom of the conversion factor so that the units will cancel and energy will remain
+\begin{equation*}
+5\cancel{\text{ moles of }\ce{NH3}} \times \dfrac{\text{-92KJ}}{2\cancel{\text{ moles of }\ce{NH3}}}=-230KJ,
+\end{equation*}
+that is: 5 moles of ammonia produce -230KJ. The fact that this value is negative means that heat will be released.
+\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Calculate the number of hydrogen moles needed to generate -200KJ. \\
+\flushright Answer: 6.5 moles.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+  
+%  \clearpage\thispagestyle{empty}\mbox{}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  \end{description}
+
+
+
+ \section{Hess's Law: Manipulating reaction enthalpies }
+In the previous section we relied on a table el standard enthalpies of formation in order to compute enthalpy changes in general reaction. This enthalpy change $\Delta H_R^{\circ}$ is related to the heat exchanged in the reaction. In this section we will not use the tables of enthalpy anymore. Imagine you do not have access to this table. And we will find alternative ways to predict $\Delta H_f^{\circ}$ given a series of reactions with know enthalpies. In short you will have to identify the enthalpies that are zero--the enthalpies corresponding to an element on its natural state-- and set up an equation that helps you find out the missing enthalpy. 
+\sloppy
+\begin{description}
+\item[\docfilehook{Reverting reactions}{Reverting reactions}] 
+Imagine they give you the following reaction:
+\begin{center}\ce{ N2_{(g)} + O2_{(g)} -> 2NO_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_1=-114KJ$\end{center}
+and you need to calculate the enthalpy change for this other reaction:
+\begin{center}\ce{2NO_{(g)}   -> N2_{(g)} + O2_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_2$\end{center}
+If you compare both reaction you will see the second reaction equals to the first reaction but reverted. If you revert a reaction, the enthalpy change changes sign. Therefore, $\Delta H^{\circ}_2=114KJ$.
+\item[\docfilehook{Timing reactions by a number}{Timing reactions by a number}] 
+Imagine they give you the following reaction:
+\begin{center}\ce{ N2_{(g)} + O2_{(g)} -> 2NO_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_1=-114KJ$\end{center}
+and you need to calculate the enthalpy change for this other reaction:
+\begin{center}\ce{2N2_{(g)} + 2O2_{(g)} -> 4NO_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_2$\end{center}
+If you compare both reaction you will see the second reaction equals to the first reaction timed by two. If you time a reaction by two, the enthalpy change should also be timed by two. Therefore, $\Delta H^{\circ}_2=2\cdot -114=-228KJ$.
+\item[\docfilehook{Combining reactions}{Combining reactions}] 
+Imagine they give you the following two reactions:
+\begin{center}
+\begin{tabular}{ r l r }
+\ce{C_{(s)} + O2_{(g)}  & -> \: CO2_{(g)}}&$\qquad \Delta H_1=-393KJ$ \\
+\ce{H2_{(g)} + 1/2 O2_{(g)} & -> \: H2O_{(l)}}&$\qquad \Delta H_2=-286KJ$ \\
+ \end{tabular}
+ \end{center}
+ and the ask the enthalpy change for the following reaction:
+\begin{center}\ce{ C_{(s)} + H2_{(g)} +3/2 O2_{(g)}  -> CO2_{(g)} + H2O_{(l)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_3$\end{center}
+If you look closely to the last reaction, you will see it results from adding the first two reactions, so that:
+\begin{center}
+\begin{tabular}{ r l r }
+\ce{C_{(s)} + O2_{(g)}  & -> \: CO2_{(g)}}&$\qquad \Delta H_1=-393KJ$ \\
+\ce{H2_{(g)} + 1/2 O2_{(g)} & -> \: H2O_{(l)}}&$\qquad \Delta H_2=-286KJ$ \\
+\multicolumn{3}{r}{} \rule{13cm}{0.4pt}\\
+Sum: \ce{C_{(s)} + H2_{(g)} +3/2 O2_{(g)}  &-> \: CO2_{(g)} + H2O_{(l)}} &$\qquad \Delta H_3$\\
+ \end{tabular}
+ \end{center}
+Therefore, $\Delta H_3=\Delta H_1+\Delta H_2=-679KJ$. When adding two chemical reactions the resulting enthalpy is the result of adding the enthalpy of both reactions.
+
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+ Calculate the enthalpy for this reaction:
+ \begin{center}\ce{ 2C_{(s)} + H2_{(g)} -> C2H2_{(g)} } \hspace*{0pt}\hfill $\Delta H^{\circ}_4$\end{center}
+Given the following thermochemical equations:
+\begin{center}
+\begin{tabular}{ r l r }
+\ce{C2H2_{(g)} + 5/2 O2_{(g)}  & -> \: 2CO2_{(g)} + H2O_{(l)}}&$\qquad \Delta H_1=-1299.5KJ$ \\
+\ce{C_{(s)} + O2_{(g)}& -> \:  CO2_{(g)}}&$\qquad \Delta H_2=-393.5KJ$ \\
+\ce{H2_{(g)} + 1/2 O2_{(g)}& -> \:  H2O_{(l)}}&$\qquad \Delta H_3=-285.8KJ$ \\
+ \end{tabular}
+ \end{center}
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+In order to get the enthalpy for reaction (4) we will have to combine reactions (1), (2) and (3), by adding, subtracting, or multiplying by a number so that the results adds up to reaction (4). A trick to do this is compare molecule by molecule in reaction (4) and see in which reaction we can find the same one. For example, reaction (4) contains 2\ce{C_{(s)}} in the reactant side. \ce{C_{(s)}}  can also be found in (2) also as reactant. However, in (2) \ce{C_{(s)}} is not timed by 2. There we will use two times reaction (2):
+ \begin{center}\ce{ 2C_{(s)} + 2O2_{(g)} ->   2CO2_{(g)}} \hspace*{0pt}\hfill $2\cdot \Delta H^{\circ}_2= -787$\end{center}
+Reaction (4) also contains  \ce{H2_{(g)}}, which can be found in  (3). There we will use (3) as it is:
+ \begin{center}\ce{ H2_{(g)} + 1/2 O2_{(g)} ->   H2O_{(l)}} \hspace*{0pt}\hfill $\Delta H^{\circ}_3=-285.8KJ$\end{center}
+Reaction (4) also contains \ce{C2H2_{(g)}} as a product. We can find the same chemical in (1) but as a reactant. There we will have to invert (1):
+ \begin{center}\ce{  2CO2_{(g)} + H2O_{(l)}  -> C2H2_{(g)} + 5/2 O2_{(g)}  } \hspace*{0pt}\hfill $-1\cdot \Delta H_1=1299.5KJ$\end{center}
+If we add the three previous reactions, we have:
+\begin{center}
+\begin{tabular}{ l l l }
+\ce{2C_{(s)} + 2O2_{(g)} 	& -> \: 	2CO2_{(g)}}&$\enskip  	2\cdot \Delta H_2= -787KJ$ \\
+\ce{H2_{(g)} + 1/2 O2_{(g)}   	& -> \: 	H2O_{(l)}}&$\enskip  	\Delta H_3=-285.8KJ$ \\
+\ce{2CO2_{(g)} + H2O_{(l)}  	& -> \: 	C2H2_{(g)} + 5/2 O2_{(g)}}&$\enskip 	-1\cdot \Delta H_1=1299.5KJ$ \\
+\multicolumn{2}{l}{} \rule{5cm}{0.4pt}&\\
+Sum: \ce{2C_{(s)} + H2_{(g)}	&-> \: 	 C2H2_{(g)} } &$\enskip 	\Delta H_4$\\
+ \end{tabular}
+ \end{center}
+ Therefore in the enthalpy for the reaction (4) will be: \begin{center}$\Delta H^{\circ}_4=2\cdot \Delta H_2+\Delta H_3-1\cdot \Delta H_1=226.7 KJ$ \end{center}
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Calculate the enthalpy for this reaction:
+\begin{center}\ce{CS2_{(l)} + 3 O2_{(g)} -> CO2_{(g)} + 2 SO2_{(g)} }\end{center}
+Given the following thermochemical equations:
+\begin{center}
+\begin{tabular}{ r l r }
+\ce{C_{(s)} + O2_{(g)}  & -> \: CO2_{(g)} }&$\qquad \Delta H_1=-393.5 KJ$ \\
+\ce{S_{(s)} + O2_{(g)} & -> \:  SO2_{(g)}}&$\qquad \Delta H_2=-296.8KJ$ \\
+\ce{C_{(s)} + 2 S_{(s)}& -> \:  CS2_{(l)}}&$\qquad \Delta H_3=87.9 KJ$ \\
+ \end{tabular}
+ \end{center}
+\flushright Answer: $-1075 KJ$.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+\end{description}
+
+
+
+
+\refstepcounter{table} \label{tab:{\chapterlabel}3}
+
+%%%%%%%%%%%%%%%ENTHALPY TABLES%%%%%%%%%%%
+\newpage\begin{fullwidth}
+\begin{figure*}[h] % FUL FIGURE
+\centering
+\fontfamily{ppl}\selectfont
+\begin{tabular}{llllllll}
+\rowcolor{black!45}
+\toprule
+
+\multicolumn{8}{l}{\hypersetup{colorlinks,linkcolor={white}} \cellcolor{black}\color{white}\bfseries\small Table \ref{tab:{\chapterlabel}3} Standard enthalpy table at 1atm and 298K in KJ/mol.} \\
+
+
+
+
+\toprule
+\rowcolor{black!45}Substance & $\Delta H_f^{\circ}$ &   & Substance  & $\Delta H_f^{\circ}$ && Substance & $\Delta H_f^{\circ}$  \\
+\midrule
+\rowcolor{black!15}Aluminum &         &      &      & & &      &       \\
+\ce{Al_{(s)}} &	0 && \ce{AlCl3_{(s)}}	&-705.63&& \ce{Al2O3_{(s)}}&	-1675.5 \\
+\ce{Al(OH)3_{(s)}}&	-1277&& \ce{Al2(SO4)3_{(s)}}&	-3440&& \ce{NH3_{(aq)}} &	-80.8 \\
+\ce{NH3_{(g)}}&	-46.1&& \ce{NH4NO3_{(s)}}& -365.6 & &\ce{Al_{(g)}} &314  \\
+\rowcolor{black!15}Barium &         &      &      & & &      &       \\
+\ce{BaCl2_{(s)}}	&-858.6 && \ce{BaCO3_{(s)}}	&-1213&& \ce{Ba(OH)2_{(s)}}	&-944.7\\
+	\ce{BaO_{(s)}}	 &-548.1&& \ce{BaSO4_{(s)}}	&-1473.2&& \ce{BaSO4_{(s)}}	&-1473.2\\
+
+
+\rowcolor{black!15}Boron&         &      &      & & &      &       \\
+	 	 \ce{BCl3_{(s)}}&	-402.96& &
+&&&
+&\\
+
+\rowcolor{black!15}Bromine&         &      &      & & &      &       \\
+	 \ce{Br2_{(l)}}&	0& &
+	\ce{Br-_{(aq)}}&	-121& &
+	 \ce{Br_{(g)}}&	111.884\\
+	 \ce{Br2_{(g)}}	&30.91& &
+	 \ce{BrF3	_{(g)}}&-255.60& &
+	 \ce{HBr_{(g)}}&	-36.29\\
+	 %
+
+\rowcolor{black!15}Cadmium&         &      &      & & &      &       \\
+	 \ce{Cd_{(s)}}&	0& &
+	 \ce{CdO_{(s)}}&	-258& &
+	 \ce{Cd(OH)2_{(s)}}&	-561\\
+	 \ce{CdS_{(s)}}&	-162& &
+	 \ce{CdSO4_{(s)}}&	-935& &
+&\\
+
+
+\rowcolor{black!15}Calcium&         &      &      & & &      &       \\
+	 \ce{Ca_{(s)}}&	0& &
+	 \ce{Ca_{(g)}}&	178.2& &
+	 \ce{Ca^{2+}_{(g)}}&	1925.90\\
+	 \ce{CaC2_{(s)}}	&-59.8& &
+	 \ce{CaCO3_{(s)}}&	-1206.9& &
+	 \ce{CaCl2_{(s)}}	&-795.8\\
+	 \ce{CaCl2_{(aq)}}&	-877.3& &
+	 \ce{Ca3(PO4)2_{(s)}}&	-4132& &
+	 \ce{CaF2_{(s)}}&	-1219.6\\
+	 \ce{CaH2_{(s)}}&	-186.2& &
+	 \ce{Ca(OH)2_{(s)}}&	-986.09& &
+	 \ce{Ca(OH)2_{(aq)}}	&-1002.82\\
+	 \ce{CaO_{(s)}}&	-635.09& &
+	 \ce{CaSO4_{(s)}}&	-1434.52& &
+	 \ce{CaS_{(s)}}&	-482.4\\
+	 \ce{CaSiO3_{(s)}}&	-1630& &
+&&&
+&\\
+
+\rowcolor{black!15}Caesium&         &      &      & & &      &       \\
+	 \ce{Cs_{(s)}}&	0& &
+	 \ce{Cs_{(g)}}&	76.50& &
+ \ce{Cs_{(l)}}&	2.09\\
+	 \ce{Cs^+_{(g)}}&	457.964& &
+	 \ce{CsCl_{(s)}}&	-443.04& &
+&\\
+\rowcolor{black!15}Carbon&         &      &      & & &      &       \\
+	 \ce{C_{graphite}_{(s)}}&	0& &
+	 \ce{C_{diamond}_{(s)}}&	1.9& &
+ \ce{C_{(g)}}&	716.67\\
+	 \ce{CO2_{(g)}}&	-393.509& &
+	 \ce{CS2_{(l)}}	&89.41& &
+ \ce{CS2_{(g)}	}&116.7\\
+	 \ce{CO_{(g)}}&	-110.525& &
+	 \ce{COCl2_{(g)}}&	-218.8& &
+	 \ce{CO2_{(aq)}}	&-419.26\\
+ \ce{HCO3^-_{(aq)}}	&-689.93& &
+	 \ce{CO3^2-_{(aq)}}&	-675.23& &
+&\\
+
+\rowcolor{black!15}Chlorine&         &      &      & & &      &       \\
+	 \ce{Cl_{(g)}}&	121.7& &
+ \ce{Cl-_{(aq)}}&	-167.2& &
+	 \ce{Cl2_{(g)}}	&0\\
+
+\rowcolor{black!15}Chromium&         &      &      & & &      &       \\
+	 \ce{Cr_{(s)}}&	0& &
+&&&
+&\\
+
+\rowcolor{black!15}Copper&         &      &      & & &      &       \\
+	 \ce{Cu_{(s)}}&	0& &
+	 \ce{CuO_{(s)}}&	-155.2& &
+	 \ce{CuSO4_{(aq)}}&	-769.98\\
+
+\rowcolor{black!15}Fluorine&         &      &      & & &      &       \\
+	 \ce{F2_{(g)}}&	0& &
+&&&
+&\\
+
+\rowcolor{black!15}Hydrogen&         &      &      & & &      &       \\
+	 \ce{H_{(g)}}&	218& &
+	 \ce{H2_{(g)}}&	0& &
+ \ce{H2O_{(g)}}&	-241.818\\
+	 \ce{H2O_{(l)}}&	-285.8& &
+	 \ce{H^{+}_{(aq)}}&	0& &
+	 \ce{OH^-_{(aq)}}&	-230\\
+	 \ce{H2O2}&	-187.8& &
+	 \ce{H3PO4_{(l)}}&	-1288& &
+	 \ce{HCN_{(g)}}&	130.5\\
+	 \ce{HBr_{(l)}}&	-36.3& &
+	 \ce{HCl_{(g)}}&	-92.30& &
+	 \ce{HCl_{(aq)}}&	-167.2\\
+	 \ce{HF_{(g)}}&	-273.3& &
+	 \ce{HI_{(g)}}&	26.5& &
+&\\
+\rowcolor{black!15}Iodine&         &      &      & & &      &       \\
+	 \ce{I2_{(s)}}&	0& &
+	 \ce{I2_{(g)}}&	62.438& &
+	 \ce{I2_{(aq)}}&	23\\
+	 \ce{I^{-}_{(aq)}}&	-55& &
+&&&
+&\\
+\bottomrule
+\end{tabular}
+\label{tab:H}
+\end{figure*} % FUL FIGURE
+\end{fullwidth}
+\newpage\vspace{-1cm}
+\begin{fullwidth}
+\begin{figure*}[h] % FUL FIGURE
+\centering
+\fontfamily{ppl}\selectfont
+\begin{tabular}{llllllll}
+\toprule
+\multicolumn{8}{l}{(cont.) Standard enthalpy table at 1atm and 298K.}   \\
+\toprule
+\rowcolor{black!45}Substance & $\Delta H_f^{\circ}$ &   & Substance  & $\Delta H_f^{\circ}$ && Substance & $\Delta H_f^{\circ}$  \\
+\midrule
+\rowcolor{black!15}Iron&         &      &      & & &      &       \\
+	\ce{Fe_{(s)}}&	0& &
+	 \ce{Fe3C_{(s)}}&	5.4& &
+	 \ce{FeCO3_{(s)}}&	-750.6\\
+	 \ce{FeCl3_{(s)}}&	-399.4& &
+ \ce{FeO_{(s)}}&	-272& &
+	 \ce{Fe3O4_{(s)}}&	-1118.4\\
+	 \ce{Fe2O3_{(s)}}&	-824.2& &
+	 \ce{FeSO4_{(s)}}&	-929& &
+	 \ce{Fe2(SO4)3_{(s)}}&	-2583\\
+	 \ce{FeS_{(s)}}&	-102& &
+	 \ce{FeS2_{(s)}}&	-178& &
+&\\
+
+\rowcolor{black!15}Lead&         &      &      & & &      &       \\
+	 \ce{Pb_{(s)}}&	0& &
+ \ce{PbO2_{(s)}}&	-277& &
+	 \ce{PbS_{(s)}}&	-100\\
+	 \ce{PbSO4_{(s)}}&	-920& &
+	 \ce{Pb(NO3)2_{(s)}}&	-452& &
+	 \ce{PbO_{(s)}}&	-276.6\\
+	 %
+\rowcolor{black!15}Magnesium&         &      &      & & &      &       \\
+ \ce{Mg_{(s)}}&	0& &
+ \ce{Mg^{2+}_{(aq)}}&	-466.85& &
+	 \ce{MgCO3_{(s)}}&	-1095.7\\
+	 \ce{MgO_{(s)}	}&-601.6& &
+	 \ce{MgSO4_{(s)}}&	-1278.2& &
+\ce{MgCl2_{(s)}}&	-641.8\\
+
+\rowcolor{black!15}Manganese&         &      &      & & &      &       \\
+ \ce{Mn_{(s)}}	&0& &
+	 \ce{MnO	_{(s)}}&-384.9& &
+	 \ce{MnO2_{(s)}}	&-519.7\\
+	 \ce{Mn2O3_{(s)}}&	-971& &
+	 \ce{Mn3O4_{(s)}}&	-1387& &
+ \ce{MnO4-_{(aq)}}	&-543\\
+
+\rowcolor{black!15}Mercury&         &      &      & & &      &       \\
+	 \ce{HgO_{(s)}}&	-90.83& &
+	 \ce{HgS_{(s)}}&	-58.2& &
+&\\
+
+\rowcolor{black!15}Nitrogen&         &      &      & & &      &       \\
+	 \ce{N2_{(g)}}&	0& &
+ \ce{NH3_{(aq)}}	&-80.8& &
+ \ce{NH3_{(g)}}&	-45.90\\
+	 \ce{NH4Cl}&	-314.55& &
+	 \ce{NO2_{(g)}}&	33.2& &
+	 \ce{N2O_{(g)}}&	82.05\\
+	 \ce{NO_{(g)}}&	90.29& &
+	 \ce{N2O4_{(g)}}	&9.16& &
+	 \ce{N2O5_{(s)}}&	-43.1\\
+
+\rowcolor{black!15}Oxygen&         &      &      & & &      &       \\
+	 \ce{O_{(g)}}&	249& &
+	 \ce{O2_{(g)}}&	0& &
+ \ce{O3_{(g)}}	&143\\
+
+\rowcolor{black!15}Phosphorus&         &      &      & & &      &       \\
+	 \ce{P4_{(s)}}&	0& &
+	 \ce{P_{red}_{(s)}}	&-17.4& &
+	 \ce{P_{black}_{(s)}}&	-39.3\\
+	 \ce{PCl3_{(l)}}&	-319.7& &
+ \ce{PCl3_{(g)}	}&-278& &
+	 \ce{PCl5_{(s)}}&	-440\\
+	 \ce{PCl5_{(g)}}& 	-321& &
+	 \ce{P2O5_{(s)}}&	-1505.5& &
+&\\
+
+\rowcolor{black!15}Potassium&         &      &      & & &      &       \\
+	 \ce{KBr_{(s)}}&	-392.2& &
+	 \ce{K2CO3_{(s)}}&	-1150& &
+	 \ce{KClO3_{(s)}}&	-391.4\\
+	 \ce{KCl_{(s)}}	&-436.68& &
+	 \ce{KF_{(s)}}&	-562.6& &
+	 \ce{K2O_{(s)}}&	-363\\
+	 \ce{KClO4_{(s)}}&	-430.12& &
+&&&
+&\\
+
+
+\rowcolor{black!15}Silicon&         &      &      & & &      &       \\
+	 \ce{Si_{(g)}	}& 368.2& &
+	 \ce{SiC_{(s)}}	&-74.4 & &
+	 \ce{SiCl4_{(l)}}&	-640.1\\
+	 \ce{SiO2_{(s)}}&	-910.86& &
+&&&
+&\\
+\rowcolor{black!15}Silver&         &      &      & & &      &       \\
+ \ce{AgBr_{(s)}}&	-99.5& &
+	 \ce{AgCl_{(s)}	}&-127.01& &
+	 \ce{AgI_{(s)}}	&-62.4\\
+	 \ce{Ag2O_{(s)}}&	-31.1& &
+	 \ce{Ag2S_{(s)}}&	-31.8& &
+&\\
+
+
+
+
+\rowcolor{black!15}Sodium&         &      &      & & &      &       \\
+	 \ce{Na_{(s)}}&	0& &
+\ce{Na_{(g)}}&	+107.5& &
+	 \ce{NaHCO3_{(s)}}&	-950.8\\
+	 \ce{Na2CO3_{(s)}}&	-1130.77& &
+ \ce{NaCl_{(aq)}}&	-407.27& &
+	 \ce{NaCl_{(s)}}&	-411.12\\
+ 
+ \ce{NaF_{(s)}}&	-569.0& &
+	 \ce{NaOH_{(aq)}}&	-469.15& &
+	 \ce{NaOH_{(s)}}	&-425.93\\
+
+	 \ce{Na2O_{(s)}}	&-414.2& &
+		&& &
+	&\\
+
+
+
+
+
+\rowcolor{black!15}Sulfur&         &      &      & & &      &       \\
+	 \ce{S8_{monoclinic}_{(s)}}&	0.3& &
+	 \ce{S8_{rhombic}_{(s)}}&	0& &
+	 \ce{H2S_{(g)}}&	-20.63\\
+ \ce{SO2_{(g)}}&	-296.84& &
+ \ce{SO3_{(g)}}&	-395.7& &
+\ce{H2SO4_{(l)}}&	-814\\
+
+\rowcolor{black!15}Titanium&         &      &      & & &      &       \\
+
+	 \ce{Ti_{(s)}}&	0& &
+ \ce{Ti_{(g)}}&	468& &
+ \ce{TiCl4_{(g)}}&	-763.2  \\
+ \ce{TiCl4_{(l)}}&	-804.2& &
+	 \ce{TiO2_{(s)}}&	-944.7& &
+&	\\
+
+\rowcolor{black!15}Zinc&         &      &      & & &      &       \\
+	 \ce{Zn_{(g)}}&	130.7& &
+	 \ce{ZnCl2_{(s)}}&	-415.1& &
+	 \ce{ZnO_{(s)}}&	-348.0  \\
+
+\bottomrule
+\end{tabular}
+\end{figure*} % FUL FIGURE
+\end{fullwidth}
+%%%%%%%%%%%%%%%ENTHALPY TABLES%%%%%%%%%%%
+
+
+\end{document}
+

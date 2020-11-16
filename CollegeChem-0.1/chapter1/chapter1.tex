@@ -1,0 +1,495 @@
+\documentclass[main.tex]{subfiles}
+\pagenumbering{arabic}
+
+\begin{document}
+\linenumbers
+
+
+
+\chapter[Measurements]{Measurements}
+\label{ch:measurements}
+
+\begin{marginfigure}
+      \includegraphics{figure1}
+      \label{fig:marginfig}
+   \end{marginfigure}
+\lettrine[lines=4]{\color{black!45}M}{measuring} is an important part of our everyday lives, and very probably you took several measurements today. You might have drunk a cup of coffee in the morning, or checked the outside temperature with a thermometer. Perhaps you baked a cake following a recipe and measured the mass of flour and sugar using a scale. A cup, a thermometer or a scale are measuring devices.This chapter will cover how to accurately measure properties and more importantly, how to convert convert units. You will, for example, learn how to convert milliliters to centimeters. This chapter will also cover density and you will learn how to compute the density of a substance. By learning how to measure and perform operation with units, you will gain experience performing basic chemistry calculations.
+\begin{marginfigure}%LEARNING GOALS BOX
+\begin{mytcbox}{GOALS}
+\begin{enumerate}[label=\protect\circled{\color{white}\arabic*}]
+\item Identify units and prefixes
+\item Introduce/eliminate prefixes
+\item Switch prefixes
+\item Calculate significant figures
+\item Carry density calculations
+\end{enumerate}
+\end{mytcbox}
+\end{marginfigure}%LEARNING GOALS BOX
+
+
+
+
+
+\section{Units of Measurements and systems of units}
+
+You probably heard the term liter, kilogram or meter. These are units of measurement. Units can be classified in different \emph{systems of units} and for example the unit \emph{meter} belongs to a different system than the unit \emph{mile}. In particular here we will address two main systems: the English System used in the US and the Metric System used by most of the industrialized world.
+The \emph{Metric System} (MS) is used by  scientists throughout the world and is the most common measuring system based on the meter. The \emph{International System of Units} (SI) adopted the metric system in 1960 in order to provide additional uniformity for units used the sciences. This chapter will be mostly based on the SI units. In the following we will introduce some common units.
+\begin{marginfigure}[-2cm]
+\begin{tcolorbox}[enhanced,colback=red!5!white,colframe=black!50!red,boxrule=1pt,
+  arc=0pt,outer arc=0pt,drop heavy lifted shadow]
+\faGears\ 
+\docenvdef{Discussion:} why is chemistry important for your career objective? List three reasons why chemistry connects with your career objective. \end{tcolorbox}
+ \end{marginfigure}
+\sloppy
+\begin{description}
+\item[\docfilehook{Length}{Length}] What is your height? Length refers to space and  both the metric and SI unit of length is the meter (m). A smaller unit of length would be the centimeter (cm) that is  commonly used in chemistry. The most important units of length are: meter, inch and mile.
+  
+ 
+\begin{marginfigure}
+      \includegraphics{chapter1/figure1-1}
+      \caption{Scales measure mass}
+      \label{fig:marginfig}
+   \end{marginfigure}
+\item[\docfilehook{Volume}{Volume}] How much milk do you usually buy? Maybe a gallon. Volume is the amount of space that a substance occupies. A liter (L) is commonly used to measure volume. The milliliter (mL) is more convenient for measuring smaller volumes of fluids in hospitals and laboratories. Gallon is still used in every-day life.  L, mL and gallon are units of volume. Units of volume are in general cubic units, so for example one litter is the same as one $dm^3$. We will cover cubit units furthe rin this chapter.
+
+\item[\docfilehook{Mass}{Mass}]How much do you weight? The mass of an object is a measure of the quantity of material it contains. You may be more familiar with the term weight than with mass. However, mass and weight are not exactly the same, as  weight is a measure of the gravitational pull on an object. It differs depending on the planet you live in. In the metric system, the unit for mass is the gram (g). The SI unit of mass, the kilogram (kg), is used for larger masses such as body weight. Pound, lb, is another unit of mass. The most important units of mass are: g, kg and lb.
+
+
+  \begin{marginfigure}
+      \includegraphics{chapter1/figure1-2}
+      \caption{Watches measure time}
+      \label{fig:marginfig}
+   \end{marginfigure}
+
+\item[\docfilehook{Temperature}{Temperature}] How is the weather in NYC today? Is it cold or hot? You use a thermometer to measure temperature and for example assess how hot is an object, or how cold is it outside, or perhaps to determine if you have a fever.  Temperature tells us how hot or cold an object is. Temperature can be measured in numerous units such as Celsius ($^{\circ}$C), Fahrenheit ($^{\circ}$F), or kelvins (K). 
+
+\item[\docfilehook{Time}{Time}]How long is your commute to work? It might take you hours to go to work from home, or maybe minutes. You probably think of time as years, days, minutes, or seconds. Of all these units, the International System if units (SI, abbreviated from the French Systeme international) uses seconds (s) to measure time. Still, time can be measured in s, min, or h and during this chapter we will learn how to convert units of time.
+
+
+
+
+
+\end{description}
+
+\begin{example} % EXAMPLE BOX
+State the type of measurement indicated in each of the following:
+\begin{multicols}{4}
+\begin{enumerate}[label=(\alph*)]
+\item 1dm
+\item 20Kg
+\item 3L
+\item 300K
+\end{enumerate}
+\end{multicols}
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+(a) length; (b) weight or mass; (c) volume; (d) Temperature; 
+\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+State the type of measurement indicated in each of the following:
+\begin{multicols}{4}
+\begin{enumerate}[label=(\alph*)]
+\item 800F
+\item 3cL
+\item 3cm
+\end{enumerate}
+\end{multicols}
+\flushright Answer: (a) Temperature; (b) volume; (c) length;
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+\begin{table}[ht]
+\centering
+\fontfamily{ppl}\selectfont
+\begin{tabular}{llll}
+\rowcolor{black!45}
+\toprule
+Measuremts & Metric System & International System (SI)& English System \\
+\midrule
+Length & Meter (m) & Meter (m)& Foot (f)\\
+ Volume & Liter (L)  &  Cubic meter ($\text{m}^3$)& Gallon (gal) \\
+   Mass & Gram (g)  &  Kilogram (kg)& Pound (lb)\\
+  Time&  Second (s) & Second (s) &Second (s)  \\
+ Temperature &Celsius ($^{\circ}$C)   & Kelvin (K)& Fahrenheit ($^{\circ}$F)  \\
+\bottomrule
+\end{tabular}
+\caption{The metric, international system and english units}
+\label{table1:1}
+\end{table}
+
+\section{Prefixes \& Conversion Factors}
+
+
+Let\textquotesingle s consider: \begin{bf}k\end{bf}m, \begin{bf}c\end{bf}m, m, which can be read as centimeter, kilometer and meter. The word kilo (\begin{bf}k\end{bf}) and centi (\begin{bf}c\end{bf}) are called prefixed whereas meter (m) is the unit. Kilometer is larger than meter, whereas centimeter is smaller than a meter. A prefix such as kilo or centi can be attached to any unit to increase or decrease its size. Hence we can talk about a centimeter (\begin{bf}c\end{bf}m) but also about a centisecond (\begin{bf}c\end{bf}s) or centiliter (\begin{bf}c\end{bf}L). The following table lists some of the metric prefixes, their symbols, and their decimal values.
+
+\begin{table}[ht]
+\centering
+\fontfamily{ppl}\selectfont
+\begin{tabular}{lll}
+\rowcolor{black!45}
+\toprule
+Prefix & Symbol & Value \\
+\midrule
+tera & T  &$1\times10^{12}$  \\
+giga & G  &$1\times10^9$  \\
+mega & M  &$1\times10^6$  \\
+kilo & k  &$1\times10^3$  \\
+\midrule
+deci & d  &$1\times10^{-1}$  \\
+centi & c  &$1\times10^{-2}$  \\
+milli & m  &$1\times10^{-3}$  \\
+micro & $\mu$  &$1\times10^{-6}$  \\
+nano & n  &$1\times10^{-9}$  \\
+pico & p  &$1\times10^{-12}$  \\
+femto & f  &$1\times10^{-15}$  \\
+\bottomrule
+\end{tabular}
+\caption{Table containing some Prefixes. For example, 1km is a thousand ($1\times 10^{3}$) meters, and 1ms is ($1\times 10^{-3}$) seconds. The prefixes on top of the table are larger than the unit, and for examples 1Tbite is larger than a bite. The prefixed on the bottom are smaller than the unit, and 1fs is smaller than a second.}
+\label{table1:2}
+\end{table}
+\resizeableyellownote{2.5}{1}{Add Table \ref{table1:2} to your flashcard.}
+
+
+
+
+ 
+
+
+\begin{figure*}[h] % FUL FIGURE
+\includegraphics[width=\linewidth,scale=0.5]{./chapter1/figure1-4}
+\caption{The different scales of the matter}
+\end{figure*}
+\sloppy
+\begin{description}
+\item[\docfilehook{How to identify the prefix?}{How to identify the prefix?}] Look for example in cm. Centi (c) is the prefix and means $1\times10^{-2}$ and meter (m) is the unit which refers to lenth. Another example, kg means kilogram. Kilo (k) is the prefix and means $1\times10^{3}$, whereas gram (g) is the unit that refers to mass. The prefix refers to the first letter whereas the unit refers to the last letter. \\
+What would you prefer to own a kilodollar, a dollar or a centidollar? A unit with a prefix can be bigger or smaller than the plain unit--this is the unit without prefix--, depending on the prefix. The following prefixes make the unit smaller: deci, centi, milli, micro, nano, pico and femto. For example a fs (femtosecond) is smaller than a s (second). Differently, the following prefixes make the unit larger: Tera, Giga, Mega. For example a Tb (terabite) is larger than a b (bite). Bite is a unit used in computer science.
+\marginnote{\faBicycle\ Remember: the \textcolor{blue}{ \textbf{pre}}fix always comes first as the \textcolor{blue}{ \textbf{c}} in \textcolor{blue}{ \textbf{c}}m}
+\item[\docfilehook{How to write unit equalities?}{How to write unit equalities?}] Unit equalities are simple expressions that relates a unit with a unit with prefix. For example: one centimeter (cm) is $1\times10^{-2}$m. Hence we can write this as a unit equality:
+\begin{equation*}
+\boxed{   1cm=1\times10^{-2}m}\text{ unit equality}    
+\end{equation*}
+\item[\docfilehook{How to write conversion factors?}{How to write conversion factors?}] Let\textquotesingle s compare cm and m. The first, cm, is a unit with a prefix, whereas m is simple a unit of length without a prefix. In order know how many m are there in a cm we need to write down a conversion factor. Think in the prefixes as synonymous of a number. In this way, centi stands for  $1\times10^{-2}$, so
+\marginnote{\faBicycle\ Remember: \textcolor{blue}{ \textbf{equalities}}  are written in line whereas \textcolor{blue}{ \textbf{conversion factors}}  with a fraction.}
+
+
+\begin{equation*}
+\boxed{   \frac{1cm}{1\times10^{-2}m}\ \enspace \text{ or  } \enspace \frac{1\times10^{-2}m}{1cm} }  \  \text{ conversion factor}   
+\end{equation*}
+ \end{description}
+\resizeableyellownote{2.5}{1}{Add Table \ref{table1:3} to your flashcard.}
+ \begin{table}[ht]
+\centering
+\fontfamily{ppl}\selectfont
+\begin{tabular}{ll}
+\rowcolor{black!45}
+\toprule
+Unit & Equality \\
+\midrule
+Inches (in)-centimeters (cm)  &$2.54\text{ cm}=1\text{ in}$  \\
+miles (mi)-meters ($m$)  &$1\text{ mi}=1609.34$m  \\
+minutes (min)-hours (h)  &$60\text{ min}=1\text{ h}$  \\
+minutes (min)-seconds (s)  &$60\text{ s}=1\text{ min}$  \\
+pound (lb)-grams (g)  &$454\text{ g}=1\text{ lb}$  \\
+cubic centimeter ($cm^3$)-mililiters (mL)  &$1\text{ mL}=1\text{cm}^3$  \\
+Liter (L)-cubic decimeters ($dm^3$)  &$1\text{ L}=1\text{dm}^3$  \\
+drops-mililiters (mL)  &$1\text{ mL}=15\text{ drops}$  \\
+\bottomrule
+\end{tabular}
+\caption{Table containing some common unit equalities.}
+\label{table1:3}
+\end{table}
+
+\begin{marginfigure}
+      \includegraphics{chapter1/figure1-5}
+      \caption{How many mL do you add to your eye?}
+      \label{fig:marginfig5}
+   \end{marginfigure}
+
+
+
+
+
+\begin{example} % EXAMPLE BOX
+Complete each of the following equalities and conversion factors:
+
+\begin{multicols}{2}
+\begin{enumerate}[label=(\alph*)]
+\item 1dm=$\hlmath{\hspace{35pt }}$m
+\item 1km=$\hlmath{\hspace{35pt }}$m
+\item  $\dfrac{1nm}{\hlmath{\hspace{35pt }}m}$
+\item  $\dfrac{\hlmath{\hspace{35pt }}m}{1cm}$
+
+\end{enumerate}
+\end{multicols}
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+(a) 1dm=$1\times10^{-1}m$; (b) 1km=$1\times10^{3}m$; (c) $\dfrac{1nm}{1\times10^{-9}m}$; (d) $\dfrac{1\times10^{-2}m}{1cm}$; 
+\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Second is a unit of time. Complete each of the following equalities and conversion factors involving seconds:
+\begin{multicols}{3}
+\begin{enumerate}[label=(\alph*)]
+\item 1cs=$\hlmath{\hspace{35pt }}$s
+\item $\dfrac{\hlmath{\hspace{35pt }}s}{1Ts}$
+\item $\dfrac{\hlmath{\hspace{35pt }}s}{1Ms}$
+\end{enumerate}
+\end{multicols}
+\flushright Answer: (a) 1cs=$1\times10^{-2}s$; (b) $\dfrac{ 1\times10^{12} s}{1Ts}$; (c) $\dfrac{ 1\times10^{6} s}{1Ms}$;
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+
+
+
+\section{Using Conversion Factors}
+
+
+Unit equalities in the form of conversion factors are used to convert a unit into another. Sometimes one wants to get rid of a prefix, such as when we transform centimeter (cm) into meter (m). Sometimes, one wants to convert a prefix into another. An example would be converting centimeters (cm) to millimeters (mm). Let\textquotesingle s work on some example.
+
+\begin{description}
+\item[\docfilehook{Removing or adding prefixes}{Removing or adding prefixes}] Imagine that you need to remove a prefix from a unit, and convert 3 km in meters. First, you would need the conversion factor corresponding to the prefix (centi) from Table \ref{table1:3}. Then you need to arrange the conversion factor placing the prefix in the bottom of the fraction. This will cancel out the prefix from the number and the conversion factor leaving the plain unit on top of the conversion factor (the final unit). The arrangement would be:
+\begin{equation*}
+3\cancel{km} \times \dfrac{1\times10^{3}m}{1\cancel{km}}=3000m
+\end{equation*}
+Imagine now that you need to add a prefix into a unit, and convert 4000 m in km. The same would apply for this case, but now you will have to arrange the conversion factor so that the prefix is on the top:
+\begin{equation*}
+4000\cancel{m} \times \dfrac{\text{1 km}}{1\times10^{3}\cancel{m}}=4km
+\end{equation*}
+
+\begin{marginfigure}
+      \includegraphics{chapter1/figure1-6}
+      \caption{Rulers normally have the cm and inch conversion written.}
+      \label{fig:marginfig6}
+   \end{marginfigure}
+
+\begin{example} % EXAMPLE BOX
+The length of a textbook page is 20cm. Convert 20cm to m.\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+In order to convert 20cm into meters, we need to remove the prefix (centi) leaving the unit (meter) without any prefix. We will use the conversion factor that relates m to cm:$\dfrac{1\times10^{-2}m}{1cm}$ or $\dfrac{1cm}{1\times10^{-2}m}$. We will arrange the conversion factor so that cm cancels giving m and hence we will use $\dfrac{1\times10^{-2}m}{1cm}$:
+ \begin{equation*}
+20\cancel{cm} \times \dfrac{1\times10^{-2}m}{1\cancel{cm}}=0.2m
+\end{equation*}
+The units on top and on the bottom of the formula cancel and we get meters.
+\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Convert 100m to km.
+\flushright Answer:$100\cancel{m} \times \dfrac{1\times10^{3}m}{1\cancel{km}}=100000m$.
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+
+\item[\docfilehook{Switching prefixes}{Switching prefixes}] In order to switch a prefix into another prefix, such as transforming 30 millimeters (30 mm) into centimeters (cm), you will need two conversion factors: the first corresponds to the prefix to be removed (milli), whereas the second conversion factor corresponds to the prefix to be introduced (centi). You will get the conversion factors from Table \ref{table1:2}. You will arrange the first conversion factor so that the prefix to be removed cancels from top to bottom and the second conversion factor so that on the top part of the conversion factor you have the prefix to be introduced. For this example:
+ \begin{equation*}
+30\cancel{mm} \times \dfrac{1\times10^{-3}\cancel{m}}{1\cancel{mm}}   \times \dfrac{1cm}{1\times10^{-2}\cancel{m}}       =3cm
+\end{equation*}
+
+\marginnote{\faBicycle\ Remember: the number $1\times 10^{-3}$ is \textcolor{blue}{ \textbf{scientific notation}} and must be typed in the calculator as: 1\keystroke{EE}$-3$.}
+\begin{example} % EXAMPLE BOX
+The length of a textbook page is 20cm. How many mm is this lenth.\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+ We want to convert 20 cm into mm, that is, we are switching prefixed. In order to do this, you need two conversion factors:$\dfrac{1\times10^{-2}m}{1cm}$ and $\dfrac{1\times10^{-3}m}{1mm}$. You will have to arrange the number (20cm) and the two conversion factors in the following form:
+ \begin{equation*}
+20\cancel{cm} \times \dfrac{1\times10^{-2}\cancel{m}}{1\cancel{cm}}   \times \dfrac{1mm}{1\times10^{-3}\cancel{m}}       =2mm
+\end{equation*}
+
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Convert 100mm to km.
+\flushright Answer:$100\cancel{mm} \times \dfrac{1\times10^{-3}\cancel{m}}{1\cancel{mm}}   \times \dfrac{1km}{1\times10^{3}\cancel{m}}       =1\times 10^{-4}km$.
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+
+\begin{marginfigure}
+      \includegraphics{chapter1/figure1-7}
+      \caption{The per-feet-square price in Tribeca where The Borough of Manhattan Community College is located in NYC is $\$1,750$}
+      \label{fig:marginfig6}
+   \end{marginfigure}
+
+\item[\docfilehook{Using other equalities}{Using other equalities}] How many hours is 300 minutes, or how many centimeters is 2 inches? Some of the units conversion are not based on a power of ten relationship such as the ones in Table \ref{table1:2}. Table \ref{table1:3} lists some of the common equalities that can be easily converted into conversion factor. As an example, the unit equivalency between hours and minutes is $60min=1h$ and the conversion factor would be $\dfrac{60min}{1h}$ or $\dfrac{1h}{60min}$.
+\begin{example} % EXAMPLE BOX
+Convert 20 in to cm.\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+ We want to convert 20 inches into centimeters. Inch is not in Table \ref{table1:2} but in \ref{table1:3}. In order to do this, you need the conversion factor:$\dfrac{1in}{2.54cm}$ or $\dfrac{2.54cm}{1in}$. You will have to arrange the number (20 in) and the conversion factor in the following form:
+ \begin{equation*}
+20\cancel{in} \times \dfrac{2.54cm}{1\cancel{in}}=50.80cm
+\end{equation*}
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }
+Convert 200mL to drops.
+\flushright Answer: $200\cancel{mL} \times \dfrac{15 drops}{1\cancel{mL}}=3000drops=3\times 10^3drops$
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+
+
+\marginnote{\faBicycle\ Remember: if you use a power on a power of ten, the power and the ten exponent multiplies, and for example $1\times (10^{-2})^2$ is $1\times 10^{-4}$ or $1\times (10^{-4})^3$ is $1\times 10^{-12}$. Also the power key in your calculator is \keystroke{\Large \^} }
+\item[\docfilehook{Square or cubic units}{Square or cubic units}] How big is your apartment? You might be living in a 750$ft^2$ loft in Brooklyn or in a larger house Upstate. Often times we encounter cubic or square units such as cubic centimeter ($cm^3$) or square feet ($ft^2$). The equivalencies for cubic or square units should take into account the unit power (power of two or power of three). 
+If $1cm=1\times 10^{-2}m$, for square units the relation should be squared and $1cm^2=1\times (10^{-2})^2m^2=1\times 10^{-4}m^2$. Similarly, if $1mm=1\times 10^{-3}m$, hence $1mm^3=1\times (10^{-3})^3m^3=1\times 10^{-9}m^3$.
+
+
+
+\begin{example} % EXAMPLE BOX
+How many $m^2$ is 20$cm^2$.\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+In order to convert 20$cm^2$ to square meters, we need to remove the centi prefix and that will give us the unit square meter without any prefix. We will use the conversion factor that relates $m^2$ to $cm^2$:$\dfrac{1\times10^{-4}m^2}{1cm^2}$ or $\dfrac{1cm^2}{1\times10^{-4}m^2}$. 
+ \begin{equation*}
+20\cancel{cm^2} \times \dfrac{1\times10^{-4}m^2}{1\cancel{cm^2}}=2\times 10^{-3}m^2
+\end{equation*}
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Convert 100$m^3$ to $dm^3$.
+\flushright Answer:$100\cancel{m^3} \times \dfrac{1dm^3}{1\times10^{-3}\cancel{m^3}}=1\times 10^5dm^3$.
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+\item[\docfilehook{Units of volume}{Units of volume}] Units such as L or mL are units of volume. As volume is a three-dimensional property, those units somehow have to be related to the units of length. In fact one litter is the same as one $dm^3$ and one ml is the same as one $cm^3$. In the allied health field, the units \emph{mL} is also written as \emph{cc} as in cubic centiliters.
+\begin{equation*}
+\boxed{   1L=1dm^3 \enspace \text{and}  \enspace1cL=1cm^3}   
+\end{equation*}
+
+\begin{example} % EXAMPLE BOX
+Convert 30 $m^3$ into L.\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+In order to convert $m^3$ into L we just need to remember that the units Liter actually refers to $dm^3$, therefore is connected to meter. We will first convert $m^3$ into $dm^3$ and then $dm^3$ into L.
+ \begin{equation*}
+30\cancel{m^3} \times \dfrac{1 \cancel{dm^3}}{1\times10^{-3}\cancel{m^3}}   \times  \dfrac{1L}{1\cancel{dm^3}} =3\times 10^{4}L
+\end{equation*}
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Convert 40L to $cm^3$.
+\flushright Answer: $40\cancel{L} \times \dfrac{1\cancel{mL}}{1\times10^{-3}\cancel{L}} \times \dfrac{1cm^3}{1\cancel{mL}}=0.04cm^3$.
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+
+
+\end{description}
+
+
+\section{Significant Figures}
+Numbers that results from the measurement of an experimental property are subject to uncertainty. Think about how many eggs are there in your refrigerator, there might be three and this number is an exact and certain number. Differently if you weight a single egg in an scale depending of the type of scale you used you will measure 70g or 71g or maybe 70.8g. The mass of an egg is a measured property and hence some of the digits of the measurement are uncertain. The goal of this section is, given a value, calculate the number of significant figures of a number (we will refer to significant figures as SF). Another goal is to estimate significant figures in calculation in order to express the result with the right number of digits.
+
+\begin{description}
+\item[\docfilehook{Significant figures of numbers}{Significant figures of numbers}] In general all numbers different than zero are significant and for example the number 123 has three significant figures. Similarly, the number 45 has two significant figures. Zeros are also significant except when:\\
+ \faCodeFork\ \begin{bf}Exception 1\end{bf}  \begin{it}A zero is not significant when placed at the beginning of a decimal number. \end{it} For example, the number 0.123 has three significant figures, as the first zero is not significant. Similarly, the number 0.002340 has four significant figures as the first three zeros are not significant but the last zero it is. Mind the rule affects only the zeros at the beginning.\\
+ \faCodeFork\ \begin{bf}Exception 2\end{bf} \begin{it}A zero is not significant when used as a placeholder in a large number without a decimal point. \end{it} For example, the number 1000 has only one significant figure, and the number 3400 has two.\\
+Let us consider more examples. The number 120 has two significant figures, as according to the second rule the last zero is not significant. Differently, the number 1203 has four significant figures, as the zero in between two numbers is not affected by neither the first nor the second rule.
+
+
+
+\begin{example} % EXAMPLE BOX
+Indicate the number of significant figures in the following numbers: 123, 4567, 1200, 340, 0.001, 0.023 and 0.0405.
+\\
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+123 has three significant figures, whereas 4567 has four SF. 1200 has only 2SF as the last two zeros are not significant, and 340 has only 2SF as the last zero is not significant. $0.001$ has only one significant figure as the first 3 zeros are not significant and $0.023$ has only two SFs. Finally, $0.0405$ has threee SFs as the first two zeros are not significant but the zero between 4 and 5 is indeed significant.\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Indicate the number of significant figures (SFs) in the following numbers: 4560, 0.123, 1000 and 0.0030. \\
+\flushright Answer: 4560 has 3SF, 0.123 has 3SF, 1000 has 1SF and 0.0030 has 2SF.
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+\item[\docfilehook{Significant figures in calculations}{Significant figures in calculations}] There are two different rules that allow you to express the result of a calculations with the correct number of figures.
+
+ \faCodeFork\ \begin{bf}Rule 1\end{bf}  \begin{it} For additions or subtractions, the results has the same number of decimal places as the number with the least decimal places in the calculation.\end{it} For example:\\
+  \begin{equation*}
+34.3451+34.5=68.84
+\end{equation*}
+If you add $34.3451+34.5$ you will obtain $68.8451$, however, as $34.3451$ has four decimal places (4DP) and $34.5$ has one decimal place (1DP), the result of adding both numbers will have to have only two decimal places, therefore $68.8451$ needs to be rounded to $68.84$.\\
+ \faCodeFork\ \begin{bf}Rule 2\end{bf}  \begin{it} For multiplications and divisions, the number of significant figures of the result should be the same as the least number of significant figures involved.\end{it}. For example, if you carry the following multiplication:
+\begin{equation*}
+4500 \times 342 =1500000
+\end{equation*}
+the number $4500$ has two significant figures, whereas the number $342$ has three significant figures. If we multiply both numbers the results should contain just two significant figures. The result of multiplying $4500 \times 342$ is $1539000$, however, this number needs to be rounded into two significant figures.
+
+
+\begin{example} % EXAMPLE BOX
+Do the following calculation with the correct number of figures.
+\begin{equation*}
+\dfrac{88.5-87.57}{345.13\times100}
+\end{equation*}
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+We will analyze each number indicating the number of SF and Digits (DP):88.5(3SF, 1DP), 87.57(4SF, 2DP),  345.13(6SF, 2DP) and  100(1SF, 0DP). The result of doing the addition needs to be rounded to one single digit: $88.5-87.57=0.93=0.9$. After that we have:
+\begin{equation*}
+\dfrac{0.9}{345.13\times100}
+\end{equation*}
+The result of this operation needs to be rounded to one SF:
+\begin{equation*}
+\dfrac{0.9}{345.13\times100}=3\times 10^5
+\end{equation*}
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Do the following calculation with the correct number of figures: $(24.56+2.433)*0.013$
+\flushright Answer: 0.35.
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+
+
+
+
+\end{description}
+
+\section{Matter and density}
+Matter makes up all substances. The materials we use such as glass or wood are all made of matter. Because there are so many kinds of materials, we classify matter by the types of components it contains.This section covers the classification of matter according to pure substances and mixtures. It also elaborates on the types of mixtures one can find. 
+\begin{description}
+\item[\docfilehook{Pure Substances}{Pure Substances}] \emph{Pure substances} have a definite composition, that is, are only made of one thing. There are two different types of pure substances: elements and compounds. \emph{Elements} are composed of only one type of atom. Examples are silver, iron, and aluminum that all contain one type of substance, and iron is only made of iron atoms, for example. \emph{Compounds} are combinations of different elements. For example, water, \ce{H2O} is made of a combination of hydrogen and oxygen atoms.
+\item[\docfilehook{Mixtures}{Mixtures}] \emph{Mixtures} are physical combinations of different substances. The air we breathe is a mixture of oxygen and nitrogen. 
+\item[\docfilehook{Types of Mixture}{Types of Mixture}]Mixtures can be homogeneous or heterogeneous. In a \emph{homogeneous mixture}--also known as solutions--the composition is uniform throughout the sample. An example of an homogeneous mixture is air, which contains oxygen and nitrogen or salt water, a solution of salt and water. \emph{Heterogeneous mixtures} are mixtures in which the components are not uniformly distributed throughout the sample. An example would be a chocolate chip cookie in which you can differenciate the dough and the chocolate.
+
+\begin{figure}[h] % FUL FIGURE
+\includegraphics[width=1\linewidth,scale=0.5]{chapter0.5/figure1-3}
+\caption{Classification of the matter}
+\end{figure}
+
+\begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+Classify as  element, compound, homogeneous mixture, heterogeneous mixture:
+\begin{multicols}{4}
+\begin{enumerate}[label=(\alph*)]
+\item An iron nail
+\item Milk
+\item Sugar
+\item miso soup 
+\end{enumerate}
+\end{multicols}
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+(a) An iron nail is an element as it is only made of iron, a single material; (b) Milk is a homogeneous mixture as it is made of water, fat, protein and on the eye you see all the elements of the mixture as a single substance; (c) Sugar is a compound as it is made of carbon and other constituents; (d) miso soup is a mixture of water, fat and other chemicals and therefore is a mixture. As you can see several of the constituents such as the liquid and the miso paste and the tofu it is a heterogeneous mixture.\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+Classify as  element, compound, homogeneous mixture, heterogeneous mixture:
+\begin{multicols}{4}
+\begin{enumerate}[label=(\alph*)]
+\item muscle milk
+\item water
+\item a gold ring
+\item rice \& beans
+\end{enumerate}
+\end{multicols}
+\flushright Answer: (a) homog. mix.; (b) compound; (c) element; (d) heterog. mix.
+\end{example}%%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
+
+
+
+\item[\docfilehook{Density }{Density }] This section also covers density of matter. Density refers to the mass of a substance with respect to its volume. This is an unique property for each substance. For example, the density for copper is 8.92 $g\cdot ml^{-1}$ and for gold is 19.3 $g\cdot ml^{-1}$. By measuring density only you would be able to differentiate copper than gold. The larger density the more compact is an object and that means the more mass per volume it has. The formula for density is
+\resizeableyellownote{2.5}{1}{Add  Formula \ref{formula1:1} to your flashcard.}
+\begin{equation}
+\boxed{   \text{Density}=\frac{\text{Mass of substance}}{\text{Volume of substance}}   }
+\label{formula1:1}
+\end{equation}
+
+\item[\docfilehook{Density and mixing}{Density and mixing}] Ice is solid and it floats on water. The reason for that is density: density of ice is smaller than density of water and hence ice stays on top of water. Objects with density larger than 1 $g\cdot ml^{-1}$ will sink whereas objects with density smaller than 1 $g\cdot ml^{-1}$ will float. If you add a drop of vegetable oil to a glass of water, the drop will float. This is because density of oil that is smaller than   1 $g\cdot ml^{-1}$.
+
+\begin{marginfigure}
+\includegraphics{chapter1/figure1-9}
+\caption{Ice floats on water as the density of ice is lower than  1$\cfrac{g}{mL}$}
+\label{fig:marginfig9}
+\end{marginfigure}
+
+\begin{example} % EXAMPLE BOX
+In the figure we mixed three liquids of density: A (0.5 $g\cdot ml^{-1}$), B(2 $g\cdot ml^{-1}$) and C(1 $g\cdot ml^{-1}$). Identify each liquid.
+\begin{center} \includegraphics[width=0.14\linewidth]{chapter1/figure1-8}   \end{center}
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+The heavier the liquid, that is the larger density, the lower the liquid will arrange in the mixture. From top to bottom we have A, C and B.\\
+\end{example}% EXAMPLE BOX ALTERNATIVE
+We can also use density to obtain the volume of a solid without having to physically having to measure the dimensions of the object. We will explain how to do this in the following example:
+
+\begin{example} % EXAMPLE BOX
+After adding a 30g object into a cylinder filled of water, the level of water rises from 60mL to 90mL. Calculate the density of the object. 
+\begin{center} \includegraphics[width=0.4\linewidth]{chapter1/figure1-10}   \end{center}
+\textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
+Density is mass over volume. The mass of the object is 30g and its volume is (90-60)mL that is 30mL. Hence: $d=\cfrac{30g}{30mL}=1\text{ }g\cdot ml^{-1}$.
+\\
+\faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
+A lead weight used in the belt of a scuba diver has a mass of 226 g. When the weight is placed in a graduated cylinder containing 200.0 mL of water, the water level rises to 220.0 mL. What is the density of the lead weight ($g\cdot ml^{-1}$)?
+\flushright Answer:$d=\cfrac{226g}{20mL}=11.3\text{ }g\cdot ml^{-1}$.
+\end{example}% EXAMPLE BOX ALTERNATIVE
+
+\end{description}
+
+
+\end{document}
+
+
