@@ -1,2 +1,2 @@
 # CollegeChemPro
-Source of a College Chemistry opentexbook
+Source code of a College Chemistry opentexbook
