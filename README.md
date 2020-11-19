@@ -1,2 +1,2 @@
 # CollegeChemPro
-College Chemistry Professional
+Source of a College Chemistry opentexbook
