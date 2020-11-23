@@ -1043,10 +1043,10 @@ Bohr's models is able to explain the atomic spectrum of hydrogen. Each line in t
 
  \item[\docfilehook{Bohn's formula for energy transitions}{ }]
 Bohr's formula gives you the values of the energy levels. If we subtract the energy values for two energy levels, we obtain the energy for a transition. 
-The energy for an electron transition between two energy levels, from $n_1$ to $n_1$ is given by:
+The energy for an electron transition between two energy levels, from $n_1$ to $n_2$ is given by:
 %\resizeableyellownote{2.5}{1}{Add this formula to your flashcard.}
 \begin{equation*}
-\boxed{  \Delta E_{n_2\rightarrow n_1}=-2.178\times 10^{-18} \Bigg( \frac{1}{n_2^2}-\frac{1}{n_1^2}\Bigg)  } \quad \textcolor{blue}{\text{Energy transition formula}}
+\boxed{  \Delta E_{n_1\rightarrow n_2}=-2.178\times 10^{-18} \Bigg( \frac{1}{n_2^2}-\frac{1}{n_1^2}\Bigg)  } \quad \textcolor{blue}{\text{Energy transition formula}}
 \end{equation*}
 where:
 \begin{where}
@@ -1144,12 +1144,12 @@ n\lambda=2\pi r
 \end{equation*}
 
 \begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
-Calculate the De Broglie wavelength of a tennis ball with mass 0.1Kg and velocity 100m/s.
+Calculate the De Broglie wavelength of a tennis ball with mass 0.1Kg and velocity 100m/s.\\
 \textlcsc{ \textcolor{dgreen}{\Large \textbf{Solution}} }\\
 We will use De Broglie's relationship that associated a wavelength ($\lambda$) to a particle, in which the mass is 100g, the velocity 10m/s: 
 \[\lambda=\frac{6.6\times 10^{-34}Js}{ 0.1Kg\cdot 100m/s}=6.6\times 10^{-35}m
 \]
-Regarding the units: remember J is $Kgm^2/s^2$ and therefore Js is the same as $Kgm^2/s$.
+Regarding the units: remember J is $Kgm^2/s^2$ and therefore Js is the same as $Kgm^2/s$.\\
 \faDiamond\ \textlcsc{ \textcolor{dgreen}{\Large \textbf{Study Check}} }\\
 Calculate the De Broglie wavelength of an electron at a velocity of 100m/s given that an electron mass is $9\times 10^{-31}$kg.
 \flushright Answer: $7.3\times 10^{-6}$m. 
@@ -1772,7 +1772,7 @@ Waves result from the propagation of energy and are not localized. Electrons beh
 \begin{equation}
 \Delta x\cdot m\Delta v \geq \frac{h}{4\pi} 
 \end{equation}
-This relation, involving Plank's constant $h$, should be interpreted as: if the uncertainty of the position is large, then the uncertainty of the velocity (or momentum) should be small. And the minimum values for the product of uncertainties if $\frac{h}{4\pi} $. 
+This relation, involving Plank's constant $h$, should be interpreted as: if the uncertainty of the position is large, then the uncertainty of the velocity (or momentum) must be small. And the minimum values for the product of uncertainties if $\frac{h}{4\pi} $. 
 
 
 \begin{example} %%%%%%%%%%%%%%%%%%%%%%%% EXAMPLE BOX
@@ -2349,14 +2349,14 @@ dup
 \pgfmathsetmacro\XspaceE{5*\Xspace }
 \pgfmathsetmacro\XspaceF{6*\Xspace }
 \pgfmathsetmacro\XspaceG{7*\Xspace }
-\node[circle,shading=ball,minimum width=\RadiusA cm] (ball1) at (0,0) {} node[yshift=-6ex] at (ball1) {167} node[yshift=6ex] at (ball1) {\small Li};
-\node[circle,shading=ball,minimum width=\RadiusC cm] (ball1) at (\Xspace em,0) {} node[yshift=-6ex] at (ball1) {112} node[yshift=6ex] at (ball1) {\small Be};
-\node[circle,shading=spherea,minimum width=\RadiusD cm] (ball1) at (\XspaceB em,0) {} node[yshift=-6ex] at (ball1) {87} node[yshift=6ex] at (ball1) {\small B};
-\node[circle,shading=spherea,minimum width=\RadiusE cm] (ball1) at (\XspaceC em,0) {} node[yshift=-6ex] at (ball1) {67} node[yshift=6ex] at (ball1) {\small C};
-\node[circle,shading=spherea,minimum width=\RadiusF cm] (ball1) at (\XspaceD em,0) {} node[yshift=-6ex] at (ball1) {56} node[yshift=6ex] at (ball1) {\small N};
-\node[circle,shading=spherea,minimum width=\RadiusG cm] (ball1) at (\XspaceE em,0) {} node[yshift=-6ex] at (ball1) {48} node[yshift=6ex] at (ball1) {\small O};
-\node[circle,shading=spherea,minimum width=\RadiusH cm] (ball1) at (\XspaceF em,0) {} node[yshift=-6ex] at (ball1) {42} node[yshift=6ex] at (ball1) {\small F};
-\node[circle,shading=spherea,minimum width=\RadiusB cm] (ball1) at (\XspaceG em,0) {} node[yshift=-6ex] at (ball1) {38} node[yshift=6ex] at (ball1) {\small Ne};
+\node[circle,shading=ball,minimum width=\RadiusA cm] (ball1) at (0,0) {} node[yshift=-6ex] at (ball1) {167} node[yshift=6ex, text=brown] at (ball1) {\small Li};
+\node[circle,shading=ball,minimum width=\RadiusC cm] (ball1) at (\Xspace em,0) {} node[yshift=-6ex] at (ball1) {112} node[yshift=6ex, text=brown] at (ball1) {\small Be};
+\node[circle,shading=spherea,minimum width=\RadiusD cm] (ball1) at (\XspaceB em,0) {} node[yshift=-6ex] at (ball1) {87} node[yshift=6ex, text=brown] at (ball1) {\small B};
+\node[circle,shading=spherea,minimum width=\RadiusE cm] (ball1) at (\XspaceC em,0) {} node[yshift=-6ex] at (ball1) {67} node[yshift=6ex, text=brown] at (ball1) {\small C};
+\node[circle,shading=spherea,minimum width=\RadiusF cm] (ball1) at (\XspaceD em,0) {} node[yshift=-6ex] at (ball1) {56} node[yshift=6ex, text=brown] at (ball1) {\small N};
+\node[circle,shading=spherea,minimum width=\RadiusG cm] (ball1) at (\XspaceE em,0) {} node[yshift=-6ex] at (ball1) {48} node[yshift=6ex, text=brown] at (ball1) {\small O};
+\node[circle,shading=spherea,minimum width=\RadiusH cm] (ball1) at (\XspaceF em,0) {} node[yshift=-6ex] at (ball1) {42} node[yshift=6ex, text=brown] at (ball1) {\small F};
+\node[circle,shading=spherea,minimum width=\RadiusB cm] (ball1) at (\XspaceG em,0) {} node[yshift=-6ex] at (ball1) {38} node[yshift=6ex, text=brown] at (ball1) {\small Ne};
 
 \begin{scope}[shift={(0,-7 em)}]
 \pgfmathsetmacro\RadiusA{\RadiusA + 0.2}
@@ -2373,14 +2373,14 @@ dup
 \pgfmathsetmacro\XspaceE{5*\Xspace }
 \pgfmathsetmacro\XspaceF{6*\Xspace }
 \pgfmathsetmacro\XspaceG{7*\Xspace }
- \node[circle,shading=ball,minimum width=\RadiusA cm] (ball1) at (0,0) {} node[yshift=-6ex] at (ball1) {190} node[yshift=6ex] at (ball1) {\small Na};
-\node[circle,shading=ball,minimum width=\RadiusC cm] (ball1) at (\Xspace em,0) {} node[yshift=-6ex] at (ball1) {145} node[yshift=6ex] at (ball1) {\small Mg};
-\node[circle,shading=spherea,minimum width=\RadiusD cm] (ball1) at (\XspaceB em,0) {} node[yshift=-6ex] at (ball1) {118} node[yshift=6ex] at (ball1) {\small Al};
-\node[circle,shading=spherea,minimum width=\RadiusE cm] (ball1) at (\XspaceC em,0) {} node[yshift=-6ex] at (ball1) {111} node[yshift=6ex] at (ball1) {\small Si};
-\node[circle,shading=spherea,minimum width=\RadiusF cm] (ball1) at (\XspaceD em,0) {} node[yshift=-6ex] at (ball1) {98} node[yshift=6ex] at (ball1) {\small P};
-\node[circle,shading=spherea,minimum width=\RadiusG cm] (ball1) at (\XspaceE em,0) {} node[yshift=-6ex] at (ball1) {90*} node[yshift=6ex] at (ball1) {\small S};
-\node[circle,shading=spherea,minimum width=\RadiusH cm] (ball1) at (\XspaceF em,0) {} node[yshift=-6ex] at (ball1) {79} node[yshift=6ex] at (ball1) {\small Cl};
-\node[circle,shading=spherea,minimum width=\RadiusB cm] (ball1) at (\XspaceG em,0) {} node[yshift=-6ex] at (ball1) {71} node[yshift=6ex] at (ball1) {\small Ar};
+ \node[circle,shading=ball,minimum width=\RadiusA cm] (ball1) at (0,0) {} node[yshift=-6ex] at (ball1) {190} node[yshift=6ex, text=brown] at (ball1) {\small Na};
+\node[circle,shading=ball,minimum width=\RadiusC cm] (ball1) at (\Xspace em,0) {} node[yshift=-6ex] at (ball1) {145} node[yshift=6ex, text=brown] at (ball1) {\small Mg};
+\node[circle,shading=spherea,minimum width=\RadiusD cm] (ball1) at (\XspaceB em,0) {} node[yshift=-6ex] at (ball1) {118} node[yshift=6ex, text=brown] at (ball1) {\small Al};
+\node[circle,shading=spherea,minimum width=\RadiusE cm] (ball1) at (\XspaceC em,0) {} node[yshift=-6ex] at (ball1) {111} node[yshift=6ex, text=brown] at (ball1) {\small Si};
+\node[circle,shading=spherea,minimum width=\RadiusF cm] (ball1) at (\XspaceD em,0) {} node[yshift=-6ex] at (ball1) {98} node[yshift=6ex, text=brown] at (ball1) {\small P};
+\node[circle,shading=spherea,minimum width=\RadiusG cm] (ball1) at (\XspaceE em,0) {} node[yshift=-6ex] at (ball1) {90*} node[yshift=6ex, text=brown] at (ball1) {\small S};
+\node[circle,shading=spherea,minimum width=\RadiusH cm] (ball1) at (\XspaceF em,0) {} node[yshift=-6ex] at (ball1) {79} node[yshift=6ex, text=brown] at (ball1) {\small Cl};
+\node[circle,shading=spherea,minimum width=\RadiusB cm] (ball1) at (\XspaceG em,0) {} node[yshift=-6ex] at (ball1) {71} node[yshift=6ex, text=brown] at (ball1) {\small Ar};
 \end{scope} 
  
 
@@ -2400,14 +2400,14 @@ dup
 \pgfmathsetmacro\XspaceE{5*\Xspace }
 \pgfmathsetmacro\XspaceF{6*\Xspace }
 \pgfmathsetmacro\XspaceG{7*\Xspace }
- \node[circle,shading=ball,minimum width=\RadiusA cm] (ball1) at (0,0) {} node[yshift=-6ex] at (ball1) {243	} node[yshift=6ex] at (ball1) {\small   K };
-\node[circle,shading=ball,minimum width=\RadiusC cm] (ball1) at (\Xspace em,0) {} node[yshift=-6ex] at (ball1) {194	} node[yshift=6ex] at (ball1) {\small  Ca};
-\node[circle,shading=spherea,minimum width=\RadiusD cm] (ball1) at (\XspaceB em,0) {} node[yshift=-6ex] at (ball1) {136	} node[yshift=6ex] at (ball1) {\small  Ga};
-\node[circle,shading=spherea,minimum width=\RadiusE cm] (ball1) at (\XspaceC em,0) {} node[yshift=-6ex] at (ball1) {125	} node[yshift=6ex] at (ball1) {\small  Ge};
-\node[circle,shading=spherea,minimum width=\RadiusF cm] (ball1) at (\XspaceD em,0) {} node[yshift=-6ex] at (ball1) {114	} node[yshift=6ex] at (ball1) {\small  As};
-\node[circle,shading=spherea,minimum width=\RadiusG cm] (ball1) at (\XspaceE em,0) {} node[yshift=-6ex] at (ball1) {103	} node[yshift=6ex] at (ball1) {\small Se};
-\node[circle,shading=spherea,minimum width=\RadiusH cm] (ball1) at (\XspaceF em,0) {} node[yshift=-6ex] at (ball1) {94	} node[yshift=6ex] at (ball1) {\small  Br};
-\node[circle,shading=spherea,minimum width=\RadiusB cm] (ball1) at (\XspaceG em,0) {} node[yshift=-6ex] at (ball1) {88	} node[yshift=6ex] at (ball1) {\small  Kr};
+ \node[circle,shading=ball,minimum width=\RadiusA cm] (ball1) at (0,0) {} node[yshift=-6ex] at (ball1) {243	} node[yshift=6ex, text=brown] at (ball1) {\small   K };
+\node[circle,shading=ball,minimum width=\RadiusC cm] (ball1) at (\Xspace em,0) {} node[yshift=-6ex] at (ball1) {194	} node[yshift=6ex, text=brown] at (ball1) {\small  Ca};
+\node[circle,shading=spherea,minimum width=\RadiusD cm] (ball1) at (\XspaceB em,0) {} node[yshift=-6ex] at (ball1) {136	} node[yshift=6ex, text=brown] at (ball1) {\small  Ga};
+\node[circle,shading=spherea,minimum width=\RadiusE cm] (ball1) at (\XspaceC em,0) {} node[yshift=-6ex] at (ball1) {125	} node[yshift=6ex, text=brown] at (ball1) {\small  Ge};
+\node[circle,shading=spherea,minimum width=\RadiusF cm] (ball1) at (\XspaceD em,0) {} node[yshift=-6ex] at (ball1) {114	} node[yshift=6ex, text=brown] at (ball1) {\small  As};
+\node[circle,shading=spherea,minimum width=\RadiusG cm] (ball1) at (\XspaceE em,0) {} node[yshift=-6ex] at (ball1) {103	} node[yshift=6ex, text=brown] at (ball1) {\small Se};
+\node[circle,shading=spherea,minimum width=\RadiusH cm] (ball1) at (\XspaceF em,0) {} node[yshift=-6ex] at (ball1) {94	} node[yshift=6ex, text=brown] at (ball1) {\small  Br};
+\node[circle,shading=spherea,minimum width=\RadiusB cm] (ball1) at (\XspaceG em,0) {} node[yshift=-6ex] at (ball1) {88	} node[yshift=6ex, text=brown] at (ball1) {\small  Kr};
 \end{scope} 
 
 
@@ -2427,27 +2427,27 @@ dup
 \pgfmathsetmacro\XspaceE{5*\Xspace }
 \pgfmathsetmacro\XspaceF{6*\Xspace }
 \pgfmathsetmacro\XspaceG{7*\Xspace }
- \node[circle,shading=ball,minimum width=\RadiusA cm] (ball1) at (0,0) {} node[yshift=-6ex] at (ball1) {	265} node[yshift=6ex] at (ball1) {\small  Rb};
-\node[circle,shading=ball,minimum width=\RadiusC cm] (ball1) at (\Xspace em,0) {} node[yshift=-6ex] at (ball1) {219	} node[yshift=6ex] at (ball1) {\small Sr};
-\node[circle,shading=spherea,minimum width=\RadiusD cm] (ball1) at (\XspaceB em,0) {} node[yshift=-6ex] at (ball1) {156	} node[yshift=6ex] at (ball1) {\small  In };
-\node[circle,shading=spherea,minimum width=\RadiusE cm] (ball1) at (\XspaceC em,0) {} node[yshift=-6ex] at (ball1) {145	} node[yshift=6ex] at (ball1) {\small Sn};
-\node[circle,shading=spherea,minimum width=\RadiusF cm] (ball1) at (\XspaceD em,0) {} node[yshift=-6ex] at (ball1) {133	} node[yshift=6ex] at (ball1) {\small  Sb};
-\node[circle,shading=spherea,minimum width=\RadiusG cm] (ball1) at (\XspaceE em,0) {} node[yshift=-6ex] at (ball1) {	123} node[yshift=6ex] at (ball1) {\small  Te};
-\node[circle,shading=spherea,minimum width=\RadiusH cm] (ball1) at (\XspaceF em,0) {} node[yshift=-6ex] at (ball1) {115	} node[yshift=6ex] at (ball1) {\small  I};
-\node[circle,shading=spherea,minimum width=\RadiusB cm] (ball1) at (\XspaceG em,0) {} node[yshift=-6ex] at (ball1) {108	} node[yshift=6ex] at (ball1) {\small  Xe};
+ \node[circle,shading=ball,minimum width=\RadiusA cm] (ball1) at (0,0) {} node[yshift=-6ex] at (ball1) {	265} node[yshift=6ex, text=brown] at (ball1) {\small  Rb};
+\node[circle,shading=ball,minimum width=\RadiusC cm] (ball1) at (\Xspace em,0) {} node[yshift=-6ex] at (ball1) {219	} node[yshift=6ex, text=brown] at (ball1) {\small Sr};
+\node[circle,shading=spherea,minimum width=\RadiusD cm] (ball1) at (\XspaceB em,0) {} node[yshift=-6ex] at (ball1) {156	} node[yshift=6ex, text=brown] at (ball1) {\small  In };
+\node[circle,shading=spherea,minimum width=\RadiusE cm] (ball1) at (\XspaceC em,0) {} node[yshift=-6ex] at (ball1) {145	} node[yshift=6ex, text=brown] at (ball1) {\small Sn};
+\node[circle,shading=spherea,minimum width=\RadiusF cm] (ball1) at (\XspaceD em,0) {} node[yshift=-6ex] at (ball1) {133	} node[yshift=6ex, text=brown] at (ball1) {\small  Sb};
+\node[circle,shading=spherea,minimum width=\RadiusG cm] (ball1) at (\XspaceE em,0) {} node[yshift=-6ex] at (ball1) {	123} node[yshift=6ex, text=brown] at (ball1) {\small  Te};
+\node[circle,shading=spherea,minimum width=\RadiusH cm] (ball1) at (\XspaceF em,0) {} node[yshift=-6ex] at (ball1) {115	} node[yshift=6ex, text=brown] at (ball1) {\small  I};
+\node[circle,shading=spherea,minimum width=\RadiusB cm] (ball1) at (\XspaceG em,0) {} node[yshift=-6ex] at (ball1) {108	} node[yshift=6ex, text=brown] at (ball1) {\small  Xe};
 \end{scope} 
  		 		 
  		 		 
   		 		 
  	\begin{scope}[shift={(0,7 em)}]	 		 	
- 	\node[xshift=0ex] at (0,0) {1A	}  node[xshift=0ex] at (\Xspace em,0) {2A	}  	 	node[xshift=0ex] at (\XspaceB em,0) {3A	} node[xshift=0ex] at (\XspaceC em,0) {4A	}   node[xshift=0ex] at (\XspaceD em,0) {5A	} node[xshift=0ex] at (\XspaceE em,0) {6A	}	node[xshift=0ex] at (\XspaceF em,0) {7A	} node[xshift=0ex] at (\XspaceG em,0) {8A	};	 			 
+ 	\node[xshift=0ex, text=blue] at (0,0) {G1A	}  node[xshift=0ex, text=blue] at (\Xspace em,0) {G2A	}  	 	node[xshift=0ex, text=blue] at (\XspaceB em,0) {G3A	} node[xshift=0ex, text=blue] at (\XspaceC em,0) {G4A	}   node[xshift=0ex, text=blue] at (\XspaceD em,0) {G5A	} node[xshift=0ex, text=blue] at (\XspaceE em,0) {G6A	}	node[xshift=0ex, text=blue] at (\XspaceF em,0) {G7A	} node[xshift=0ex, text=blue] at (\XspaceG em,0) {G8A	};	 			 
  	\end{scope}
 	
 	\def\myshift#1{\scriptsize\raisebox{1ex}}
-	\draw [<-, thick, -latex,postaction={decorate,decoration={text along path,text align=center,text={|\myshift|Atomic radius increases}}}] (0,10em ) to   (30 em ,10 em);
+	\draw [shift={(0em,-36em)},->, thick, -latex,postaction={decorate,decoration={reverse path,raise=0em,text along path,text align=center,text={|\myshift|Atomic radius increases}}}]    (30 em ,10 em) to  (0,10em )  ;
  		 	\draw [thick, -latex,postaction={decorate,decoration={reverse path,raise=0em,text along path,text align=center,text={|\myshift|Atomic radius increases}}}] (-5em,0em ) to   (-5 em ,-20 em);
 
- 		  \node[text width=14cm, fontscale=1, shift={(0em,-17em)}] at (10em,-10em) { \begin{bf}\color{black}\bfseries\large Figure \ref{Fig:{\chapterlabel}\thefigurenewcounter} \end{bf} Change of atomic (calculated) radius in the periodic table in pm. $^*$ was estimated   };
+ 		  \node[text width=15cm, fontscale=.8, shift={(0em,-17em)}] at (10em,-12em) { \begin{bf}\color{black}\bfseries\large Figure \ref{Fig:{\chapterlabel}\thefigurenewcounter} \end{bf} Change of atomic radius (calculated values given in pm) across the periodic table. The value with $^*$ was estimated   };
 
 \end{tikzpicture}
 
@@ -2615,10 +2615,9 @@ x       y       label       alignment
  
 The ionization energy increases (this means more energy is needed to remove an electron) going up a group and when going across a period from left to right. In general, the ionization energy is low for the metals and high for the nonmetals. For example, if we compare the IE for H and He, as He is further right in the same period, it will have a larger IE and more energy will be needed to remove an electron ($\text{IE}_{H}<IE_{He}$). For the case of Li and H, the EI will be higher for H as it is further up in the same group ($\text{IE}_{H}>IE_{Li}$).There are discontinuities in the IE when moving across a period. Table \ref{tab:{\chapterlabel}1} gives the IE for the second period. The first discontinuity happens between groups 2A and 3A as it is easier to remove p electrons than s electrons. The second discontinuity occurs between groups 5A and 6A as it is easier to remove an electron from a double occupies p orbital than from a single occupied one.
 \item[\docfilehook{Electron affinity}{}] 
-The electron affinity (EA) is the tendency of an atom to receive one or more electrons becoming negatively charged.  Here, we consider electron affinities as negative values and the larger (the more negative) this value the larger the tendency of the atom to accept electrons. In another words, it would be easier to add electrons to atoms with negative EA, than to atoms with positive EA. For example, the electron affinity of hydrogen is:
+The electron affinity (EA) represents the tendency of an atom to receive one or more electrons hence becoming negatively charged.  Specifically, is the energy involved in the process of receiving an electron. As an example, the electron affinity of hydrogen is written as:
 \begin{center}\ce{H_{(g)} + e^-     -> H^{-}_{(g)} } $\qquad   \text{EA}_1= -195kJ/mol$  \end{center}
-EA increases (becomes more positive) from left to right of a period, that means the elements from the right of the table are more willing to gain electrons hence becoming negatively charged. There are discontinuities in the electron affinity across a group. It is easier to add an electron to the elements in Group 1A than to elements in Group 2A, as an electron added to Group 2 elements would be places in $p$ orbitals and these have higher--more positive--energy. Also, it is easier to add an electron to the elements in Group 4A than to elements in Group 5A, as an electron added to Group 4 elements would be places in $p$ orbitals giving three unpaired electrons, whereas electron on Group 5 are all paired and a new electron would have to added to an orbital that already contains an electron. Furthermore, there is less variations when going across a group. Finally, when adding more than one electron, the second EA tends to be more positive--less favored--than the first electron addition.
-
+Here, we consider electron affinities as negative values so that the smaller (the more negative) this value the larger the tendency of the atom to accept electrons. In other words, it would be easier to add electrons to an atom with -10kJ/mol EA, than to an atom with 10kJ/mol EA. In the periodic table, EA decreases (becomes more negative) across a period from left to right. For example, EA for K is -48kJ/mol and for Br is --325kJ/mol. Hence, elements from the right of the table are more willing to gain electrons than elements from the left. On one hand, there are discontinuities in the electron affinity across a period. It is easier to add an electron to the elements in Group 1A than to elements in Group 2A, as an electron added to Group 2 elements would be placed in $p$ orbitals and these have higher--more positive--energies. Also, it is easier to add an electron to the elements in Group 4A than to elements in Group 5A, as an electron added to Group 4 elements would be placed in $p$ orbitals giving three unpaired electrons, whereas electron on Group 5 are all paired and a new electron would have to add to an already occupied orbital. On the other hand, there are fewer EA variations when going across a group. Finally, when adding more than one electron, the second EA tends to be more positive--less favored--than the first electron addition.
   \stepcounter{figurenewcounter}   \refstepcounter{figure}  \label{Fig:{\chapterlabel}\thefigurenewcounter}
  \vspace{0cm}\hspace{0cm}\begin{minipage}[b]{1.5\linewidth}
 
