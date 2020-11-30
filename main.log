@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 NOV 2020 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  30 NOV 2020 16:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -4773,11 +4773,7 @@ Package: chemformula 2016/05/11 v4.15 typeset chemical compounds and reactions
 LaTeX Warning: Unused global option(s):
     [14pt].
 
-(./main.aux
-
-LaTeX Warning: Label `env:Discussion:' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5306.
@@ -5055,9 +5051,9 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 
 (./chapter6/chapter6.tex
-Chapter 10.
+Chapter 1.
 LaTeX Font Info:    Try loading font information for T1+PTSansNarrow-TLF on inp
-ut line 14.
+ut line 15.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/paratype/T1PTSansNarrow-TLF.fd
 File: T1PTSansNarrow-TLF.fd 2014/02/02 Font definitions for T1/PTSansNarrow-TLF
 .
@@ -5067,7 +5063,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<chapter6/figure1.png, id=157, 1104.125pt x 509.905pt>
+<chapter6/figure1.png, id=133, 1104.125pt x 509.905pt>
 File: chapter6/figure1.png Graphic file (type png)
 
 <use chapter6/figure1.png>
@@ -5118,13 +5114,13 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Warning: Marginpar on page 1 moved.
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 63.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 62.
 LaTeX Font Info:    Try loading font information for U+fontawesomeone on input 
-line 70.
+line 69.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
 File: ufontawesomeone.fd 2016/05/15 Font definitions for U/fontawesomeone.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--72
+Underfull \hbox (badness 10000) in paragraph at lines 65--71
 
  []
 
@@ -5133,159 +5129,159 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--72
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./chapt
 er6/figure1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 84--89
+Underfull \hbox (badness 10000) in paragraph at lines 83--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 131--136
+Underfull \hbox (badness 10000) in paragraph at lines 130--135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
 
  []
 
 [4]
 
-LaTeX Warning: Reference `tab:vsepr' on page 5 undefined on input line 178.
+LaTeX Warning: Reference `tab:vsepr' on page 5 undefined on input line 177.
 
 
-LaTeX Warning: Reference `tab:vsepr' on page 5 undefined on input line 178.
+LaTeX Warning: Reference `tab:vsepr' on page 5 undefined on input line 177.
 
 [5] (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 190.
+(hyperref)                setting the option has no effect on input line 189.
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 190.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 190.
-<./chapter6/geom1.png, id=223, 50.1875pt x 23.08624pt>
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 189.
+<./chapter6/geom1.png, id=201, 50.1875pt x 23.08624pt>
 File: ./chapter6/geom1.png Graphic file (type png)
 
 <use ./chapter6/geom1.png>
-Package pdftex.def Info: ./chapter6/geom1.png used on input line 194.
+Package pdftex.def Info: ./chapter6/geom1.png used on input line 193.
 (pdftex.def)             Requested size: 34.37056pt x 15.81044pt.
 
-<./chapter6/geom9.png, id=224, 1104.125pt x 602.25pt>
+<./chapter6/geom9.png, id=202, 1104.125pt x 602.25pt>
 File: ./chapter6/geom9.png Graphic file (type png)
 
 <use ./chapter6/geom9.png>
-Package pdftex.def Info: ./chapter6/geom9.png used on input line 194.
+Package pdftex.def Info: ./chapter6/geom9.png used on input line 193.
 (pdftex.def)             Requested size: 34.35219pt x 18.73755pt.
 
-<./chapter6/geom2.png, id=225, 50.1875pt x 44.165pt>
+<./chapter6/geom2.png, id=203, 50.1875pt x 44.165pt>
 File: ./chapter6/geom2.png Graphic file (type png)
 
 <use ./chapter6/geom2.png>
-Package pdftex.def Info: ./chapter6/geom2.png used on input line 194.
+Package pdftex.def Info: ./chapter6/geom2.png used on input line 193.
 (pdftex.def)             Requested size: 34.37056pt x 30.24608pt.
 
-<./chapter6/geom10.png, id=226, 1104.125pt x 808.01875pt>
+<./chapter6/geom10.png, id=204, 1104.125pt x 808.01875pt>
 File: ./chapter6/geom10.png Graphic file (type png)
 
 <use ./chapter6/geom10.png>
-Package pdftex.def Info: ./chapter6/geom10.png used on input line 194.
+Package pdftex.def Info: ./chapter6/geom10.png used on input line 193.
 (pdftex.def)             Requested size: 34.35219pt x 25.13956pt.
 
-<./chapter6/geom3.png, id=227, 50.1875pt x 34.1275pt>
+<./chapter6/geom3.png, id=205, 50.1875pt x 34.1275pt>
 File: ./chapter6/geom3.png Graphic file (type png)
 
 <use ./chapter6/geom3.png>
-Package pdftex.def Info: ./chapter6/geom3.png used on input line 195.
+Package pdftex.def Info: ./chapter6/geom3.png used on input line 194.
 (pdftex.def)             Requested size: 34.37056pt x 23.37196pt.
 
-<./chapter6/geom11.png, id=228, 1104.125pt x 509.905pt>
+<./chapter6/geom11.png, id=206, 1104.125pt x 509.905pt>
 File: ./chapter6/geom11.png Graphic file (type png)
 
 <use ./chapter6/geom11.png>
-Package pdftex.def Info: ./chapter6/geom11.png used on input line 195.
+Package pdftex.def Info: ./chapter6/geom11.png used on input line 194.
 (pdftex.def)             Requested size: 34.35219pt x 15.86446pt.
 
-<./chapter6/geom4.png, id=229, 50.1875pt x 50.1875pt>
+<./chapter6/geom4.png, id=207, 50.1875pt x 50.1875pt>
 File: ./chapter6/geom4.png Graphic file (type png)
 
 <use ./chapter6/geom4.png>
-Package pdftex.def Info: ./chapter6/geom4.png used on input line 197.
+Package pdftex.def Info: ./chapter6/geom4.png used on input line 196.
 (pdftex.def)             Requested size: 34.37056pt x 34.37056pt.
 
-<./chapter6/geom12.png, id=230, 1104.125pt x 894.34125pt>
+<./chapter6/geom12.png, id=208, 1104.125pt x 894.34125pt>
 File: ./chapter6/geom12.png Graphic file (type png)
 
 <use ./chapter6/geom12.png>
-Package pdftex.def Info: ./chapter6/geom12.png used on input line 197.
+Package pdftex.def Info: ./chapter6/geom12.png used on input line 196.
 (pdftex.def)             Requested size: 34.35219pt x 27.82527pt.
 
-<./chapter6/geom5.png, id=231, 50.1875pt x 40.15pt>
+<./chapter6/geom5.png, id=209, 50.1875pt x 40.15pt>
 File: ./chapter6/geom5.png Graphic file (type png)
  <use ./chapter6/geom5.png>
-Package pdftex.def Info: ./chapter6/geom5.png used on input line 199.
+Package pdftex.def Info: ./chapter6/geom5.png used on input line 198.
 (pdftex.def)             Requested size: 34.37056pt x 27.49644pt.
 
-<./chapter6/geom13.png, id=232, 1104.125pt x 798.985pt>
+<./chapter6/geom13.png, id=210, 1104.125pt x 798.985pt>
 File: ./chapter6/geom13.png Graphic file (type png)
 
 <use ./chapter6/geom13.png>
-Package pdftex.def Info: ./chapter6/geom13.png used on input line 199.
+Package pdftex.def Info: ./chapter6/geom13.png used on input line 198.
 (pdftex.def)             Requested size: 34.35219pt x 24.85849pt.
 
-<./chapter6/geom6.png, id=233, 50.1875pt x 34.1275pt>
+<./chapter6/geom6.png, id=211, 50.1875pt x 34.1275pt>
 File: ./chapter6/geom6.png Graphic file (type png)
 
 <use ./chapter6/geom6.png>
-Package pdftex.def Info: ./chapter6/geom6.png used on input line 200.
+Package pdftex.def Info: ./chapter6/geom6.png used on input line 199.
 (pdftex.def)             Requested size: 34.37056pt x 23.37196pt.
 
-<./chapter6/geom7.png, id=234, 50.1875pt x 57.21375pt>
+<./chapter6/geom7.png, id=212, 50.1875pt x 57.21375pt>
 File: ./chapter6/geom7.png Graphic file (type png)
 
 <use ./chapter6/geom7.png>
-Package pdftex.def Info: ./chapter6/geom7.png used on input line 201.
+Package pdftex.def Info: ./chapter6/geom7.png used on input line 200.
 (pdftex.def)             Requested size: 34.37056pt x 39.18243pt.
 
-<./chapter6/geom8.png, id=235, 50.1875pt x 53.19875pt>
+<./chapter6/geom8.png, id=213, 50.1875pt x 53.19875pt>
 File: ./chapter6/geom8.png Graphic file (type png)
 
 <use ./chapter6/geom8.png>
-Package pdftex.def Info: ./chapter6/geom8.png used on input line 203.
+Package pdftex.def Info: ./chapter6/geom8.png used on input line 202.
 (pdftex.def)             Requested size: 34.37056pt x 36.43279pt.
 
-Overfull \hbox (223.4426pt too wide) in paragraph at lines 187--205
+Overfull \hbox (223.4426pt too wide) in paragraph at lines 186--204
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--221
+Underfull \hbox (badness 10000) in paragraph at lines 215--220
 
  []
 
@@ -5293,89 +5289,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--221
 ter6/geom10.png> <./chapter6/geom3.png> <./chapter6/geom11.png> <./chapter6/geo
 m4.png> <./chapter6/geom12.png> <./chapter6/geom5.png> <./chapter6/geom13.png> 
 <./chapter6/geom6.png> <./chapter6/geom7.png> <./chapter6/geom8.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 255--263
+Underfull \hbox (badness 10000) in paragraph at lines 254--262
 
  []
 
 [7]
 
-LaTeX Warning: Reference `tab:hybrid' on page 8 undefined on input line 295.
+LaTeX Warning: Reference `tab:hybrid' on page 8 undefined on input line 294.
 
 [8]
 
 Package hyperref Warning: Option `colorlinks' has already been used,
-(hyperref)                setting the option has no effect on input line 318.
+(hyperref)                setting the option has no effect on input line 317.
 
 
-Overfull \hbox (67.59016pt too wide) in paragraph at lines 324--324
+Overfull \hbox (67.59016pt too wide) in paragraph at lines 323--323
 [][] 
  []
 
 
-Overfull \hbox (76.3448pt too wide) in paragraph at lines 327--328
+Overfull \hbox (76.3448pt too wide) in paragraph at lines 326--327
 [][] 
  []
 
 
-Overfull \hbox (79.0395pt too wide) in paragraph at lines 332--333
+Overfull \hbox (79.0395pt too wide) in paragraph at lines 331--332
 [][] 
  []
 
 
-Overfull \hbox (76.3448pt too wide) in paragraph at lines 337--338
+Overfull \hbox (76.3448pt too wide) in paragraph at lines 336--337
 [][] 
  []
 
 
-Overfull \hbox (74.29199pt too wide) in paragraph at lines 315--340
+Overfull \hbox (74.29199pt too wide) in paragraph at lines 314--339
  [] 
  []
 
 
-Overfull \hbox (1.90002pt too wide) in paragraph at lines 310--342
+Overfull \hbox (1.90002pt too wide) in paragraph at lines 309--341
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--352
+Underfull \hbox (badness 10000) in paragraph at lines 346--351
 
  []
 
 [9]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 429.
+(Font)              <20.74> on input line 428.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 429.
+(Font)              <14.4> on input line 428.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 429.
+(Font)              <12> on input line 428.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 429.
+(Font)              scaled to size 21.61124pt on input line 428.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 429.
+(Font)              scaled to size 15.0049pt on input line 428.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 429.
+(Font)              scaled to size 12.50409pt on input line 428.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 429.
+(Font)              scaled to size 21.61124pt on input line 428.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 429.
+(Font)              scaled to size 15.0049pt on input line 428.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 429.
+(Font)              scaled to size 12.50409pt on input line 428.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
  [10]
-Overfull \hbox (28.89708pt too wide) in paragraph at lines 588--588
+Overfull \hbox (28.89708pt too wide) in paragraph at lines 587--587
  [] 
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7.6> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 644.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 643.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <6> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 644.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 643.
 
 Underfull \vbox (badness 6316) has occurred while \output is active []
 
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 682--683
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
 
  []
 
@@ -5383,18 +5379,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 682--683
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-Underfull \hbox (badness 3601) in paragraph at lines 794--800
+Underfull \hbox (badness 3601) in paragraph at lines 793--799
 []\T1/ptm/m/n/10 (+20) Given the fol-low-ing MO con-fig-u-ra-tions: (a) $\OML/l
 mm/m/it/10 ^^[[]^^[[]^^Y[]^^[[]$ \T1/ptm/m/n/10 (+20) and (b)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--800
+Underfull \hbox (badness 10000) in paragraph at lines 793--799
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 807--813
+Underfull \hbox (badness 10000) in paragraph at lines 806--812
 
  []
 
@@ -5516,8 +5512,8 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 21CF63DEAB466FEF1A913ED52D5EBBD4;2253
-(rerunfilecheck)             After:  D4E03F9ECAF1E6D5A866EE8CB1D7585C;1068.
+(rerunfilecheck)             Before: D4E03F9ECAF1E6D5A866EE8CB1D7585C;1068
+(rerunfilecheck)             After:  12B8E4B167FED4527D9552A395F14413;1057.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.88pt have occurred.
@@ -5529,35 +5525,47 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5391.
  ) 
 Here is how much of TeX's memory you used:
- 82125 strings out of 493014
- 1847367 string characters out of 6133351
- 2676142 words of memory out of 5000000
- 83736 multiletter control sequences out of 15000+600000
+ 81785 strings out of 493014
+ 1840855 string characters out of 6133351
+ 2672253 words of memory out of 5000000
+ 83392 multiletter control sequences out of 15000+600000
  243194 words of font info for 307 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,19n,104p,10369b,1985s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section.1.5} has been referenced but does not exi
+pdfTeX warning (dest): name{figure.10.2} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
+pdfTeX warning (dest): name{figure.10.1} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{table.10.2} has been referenced but does not exist,
+ replaced by a fixed one
 
-pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{table.10.1} has been referenced but does not exist,
+ replaced by a fixed one
 
-pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{section.10.5} has been referenced but does not exis
+t, replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{section.10.4} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.10.3} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.10.2} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.10.1} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.10} has been referenced but does not exist,
+ replaced by a fixed one
 
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/loca
 l/texlive/2016/texmf-dist/fonts/enc/dvips/paratype/ptsans_t1.enc}{/usr/local/te
@@ -5586,10 +5594,10 @@ st/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on main.pdf (16 pages, 1209065 bytes).
+Output written on main.pdf (16 pages, 1210019 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 345 compressed objects within 4 object streams
- 122 named destinations out of 1000 (max. 500000)
- 66089 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 331 compressed objects within 4 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 66041 words of extra memory for PDF output out of 74296 (max. 10000000)
 
